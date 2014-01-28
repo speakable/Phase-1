@@ -1,0 +1,16 @@
+-Select one, and it's impossible to select another
+-ability to deselect an item
+-loose points for an incorrect answer.
+
+-randomly generated combination of words and pictures
+-time limit. How many points can you get in 1 min? 2min, etc.
+-Dialog box that tells you your score in the time limit.
+-ability to set timer for yourself.
+
+-list regenerates after you finish so you can continue until the timer runs out.
+
+
+-more words and pictures that appear
+-background image?
+
+Bug: there is a pretty long load time. I think sorting out the order of the javascript links will shorten it

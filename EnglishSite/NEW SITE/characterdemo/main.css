@@ -1,0 +1,81 @@
+﻿body {
+	font-weight:200;
+	letter-spacing: 1px;
+	margin: 0 auto;
+	width: 100%;
+	clear: both;
+}
+
+#maincontent {
+	min-height: 480px;
+	padding-top: 10px;
+	text-align: center;
+	-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+}
+
+/* FLASHCARDS ANIMATION */
+
+.back {
+	background-color: #eee;
+}
+
+.flip-container {
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		-webkit-transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back, .questions {
+	width: 155px;
+	height: 155px;
+	display: inline-block;
+	    -moz-user-select: none; 
+        -khtml-user-select: none; 
+        -webkit-user-select: none; 
+        -o-user-select: none;
+}
+
+.back {
+	padding: 60px 10px;
+}
+
+/* flip speed goes here */
+.flipper {
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+	-webkit-transform: rotateY(180deg);
+}
+
+/* Questions BOX */
+
+.questions {
+	display: inline-block;
+	background-color: none;
+	border-left: dotted 1px black;
+	border-right: dotted 1px black;
+}

@@ -1,0 +1,263 @@
+﻿*{-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+ }
+
+ /*html {
+            overflow: hidden;
+        } --makes scrollbar disappear, too -- */
+
+		
+body {
+  background-image: none;
+  background-color: #ededed;
+  color: #414142; /* page font color */
+  font-size: 87.5%; /* Base font size is 14px*/
+  line-height: 1.5em;
+  font-family: Arial;
+  margin-bottom: 0px; /*<< changes bottom border of page */
+}
+
+h1 {font-size:40px; font-family:"Arial, Helvetica, sans-serif;"}
+h2 {font-size:30px; font-family:"Arial, Helvetica, sans-serif;"}
+p {font-size:14px; font-family:"Arial, Helvetica, sans-serif;"}
+
+a {
+	text-decoration: none;
+}
+
+/* STYLE LINKS
+
+a:link, a:visited {
+}
+
+a:hover, a:active {
+}
+*/
+
+.body {
+	margin: 0 auto;
+	width: 100%;
+	clear: both;
+}
+
+.mainheader {
+    /*position: fixed;*/
+	background: #0099ff;
+	padding: 20px;
+	width: 100%;
+	min-width: 380px;
+}
+
+.title {
+    color: white;
+    font-family:advent;
+    font-size: 3.5em;
+	font-weight:200;
+    letter-spacing: 2px;
+	text-align: center;
+}
+
+/* ====================
+    HEADER: CSS3 Effects
+   ====================
+
+    .header-container,
+	.main aside {
+    -webkit-box-shadow: 0 5px 10px #aaa;
+    -moz-box-shadow: 0 5px 10px #aaa;
+    box-shadow: 0 5px 10px #aaa;
+} */
+ 
+.mainheader nav {
+	background-color: white;
+	height: 40px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.mainheader nav ul {
+	list-style: none;
+	margin: 0 auto;
+}
+
+.mainheader nav ul li { 
+	float: left;
+	display: inline;
+}
+
+.mainheader nav a:link, .mainheader nav a:visited {
+	color: #414142;
+	display: inline-block;
+	padding: 10px 25px;
+	height: 40px;
+}
+
+.mainheader nav a:hover, .mainheader nav a:active,
+.mainheader nav .active a:link, .mainheader nav .active {
+	background-color:#FFD640;
+	text-shadow:none;
+}
+
+.mainheader nav ul li a {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+button {
+	background: #FFF;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-left: 1px solid #E8E8E8;
+	color: #1D1D1D;
+	font-size: 14px;
+	padding: 5px 0;
+	text-align: center;
+	text-decoration: none;
+	width: 103px;
+	margin: 2px;
+	outline: none;
+}
+
+button:hover {
+background-color: #FFD640;
+}
+
+#bg_container {
+	background-image: url(images/bg_mountain5.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+	min-height: 480px;
+	min-width: 380px;
+}
+
+#face {
+	background-color: none;
+	text-align: center;
+	padding: 1px;
+	position: absolute;
+    top: 32%;
+    left: 18.5%;
+	height: 200px;
+	width: 200px;
+}
+/*CSS IMAGE ANIMATIONS --- GROW --- */
+
+.face_pic img {
+	height: 150px;
+	width: 150px;
+}
+ 
+.face_pic img:hover {
+	width: 155px;
+	height: 155px;
+}
+
+/*CSS IMAGE ANIMATIONS --- peek up --- 
+
+.face_pic img {
+	height: 100px;
+	width: 100px;
+	margin: 15px;
+
+			-webkit-transition: margin 0.1s ease-out; 
+		-moz-transition: margin 0.1s ease-out; 
+		-o-transition: margin 0.1s ease-out; 
+}
+ 
+.face_pic img:hover {
+ margin-top: 2px; }
+} */
+	
+#gamearea {
+	background-color: none;
+	text-align: center;
+	padding: 1px;
+	margin: 0px;
+	position: absolute;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	top: 37%;
+    left: 38.1%;
+	min-width: 200px;
+	min-height: 200px;
+}
+
+#clock_div {
+	text-align: center;
+	padding: 1px;
+	margin: 0px;
+	position: absolute;
+	top: 30%;
+    right: 21%;
+	min-width: 200px;
+	min-height: 200px;
+}
+
+#dialog {
+    display: none;
+}
+
+/* ====================
+   Clock
+   ==================== */
+
+#clock {
+  position: relative;
+  width: 120px;/*600*/
+  height: 120px;/*600*/
+  margin: 20px auto 0 auto;
+  background: url(images/clockface.png);
+  list-style: none;
+}
+
+#sec{
+  position: absolute;
+  width: 6px;/*30*/
+  height: 120px;/*600*/
+  top: 0px;
+  left: 57px;/*285*/
+}
+
+#sec {
+  background: url(images/sechand.png);
+  z-index: 3;
+}
+
+/* =============================
+     Animation for background
+   =============================
+  
+@keyframes animatedBackground {
+			from { background-position: 0 0; }
+			to { background-position: 100% 0; }
+		}
+		@-webkit-keyframes animatedBackground {
+			from { background-position: 0 0; }
+			to { background-position: 100% 0; }
+		}
+		@-ms-keyframes animatedBackground {
+			from { background-position: 0 0; }
+			to { background-position: 100% 0; }
+		}
+		@-moz-keyframes animatedBackground {
+			from { background-position: 0 0; }
+			to { background-position: 100% 0; }
+		}
+
+#bg_container	{ 
+		width: 600px; 
+		height: 500px; 
+		background-image: url(images/mountains.png);
+		background-position: 0px 0px;
+		background-repeat: repeat-x;
+		animation: animatedBackground 40s linear infinite;
+		-moz-animation: animatedBackground 40s linear infinite;
+		-webkit-animation: animatedBackground 40s linear infinite; 
+		
+*/

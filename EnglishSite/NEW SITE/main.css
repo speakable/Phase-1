@@ -1,0 +1,114 @@
+﻿#footer {
+	text-align: center;
+}
+
+#aboutimage {
+	background-image: url(assets/img/about.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+	min-height: 8215px;
+	min-width: 380px;
+}
+
+#animationdemos {
+	min-height: 480px;
+	padding-top: 10px;
+	text-align: center;
+	-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+}
+
+#flashcardwall {
+	background-color: #eee;
+	min-height: 480px;
+	padding-top: 10px;
+	padding-right: 15px;
+	text-align: center;
+	-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+}
+
+#activebox {
+	background-color: #ADFF2F;
+	text-align: center;
+	display: inline-block;
+	height: 180px;
+	width: 180px;
+	padding: 70px 20px;
+	margin: 5px;
+    	font-size: 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color: white;
+	list-style:none;
+	cursor: pointer;
+        -moz-user-select: none; 
+        -khtml-user-select: none; 
+        -webkit-user-select: none; 
+        -o-user-select: none;
+}
+
+/* FLASHCARDS ANIMATION */
+
+.back {
+	background-color: white;
+}
+
+.flip-container {
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		-webkit-transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	    -moz-user-select: none; 
+        -khtml-user-select: none; 
+        -webkit-user-select: none; 
+        -o-user-select: none;
+}
+
+.back {
+	padding: 50px 30px;
+}
+
+/* flip speed goes here */
+.flipper {
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	-webkit-backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+	-webkit-transform: rotateY(180deg);
+}

@@ -1,0 +1,110 @@
+﻿#ww {
+	background-color: white;
+}
+
+#footer {
+	text-align: center;
+}
+
+.face_pic img{
+	height: 128px;
+	width: 128px;
+}
+
+body {
+	font-weight:200;
+	margin: 0 auto;
+	width: 100%;
+	clear: both;
+}
+
+#face, 
+#gamearea,
+#clock_div {
+	display: inline-block;
+	background-color: none;
+	margin: 10px; 
+}
+
+/* ====================
+   Clock
+   ==================== */
+
+#clock {
+  position: relative;
+  width: 120px;/*600*/
+  height: 120px;/*600*/
+  background: url(img/clockface.png);
+  list-style: none;
+}
+
+#sec{
+  position: absolute;
+  width: 6px;/*30*/
+  height: 120px;/*600*/
+  top: 0px;
+  left: 57px;/*285*/
+}
+
+#sec {
+  background: url(img/sechand.png);
+  z-index: 3;
+}
+
+/* ====================
+   Buttons
+   ==================== */
+
+#gamearea button {
+	background: #FFF;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-left: 1px solid #E8E8E8;
+	color: #1D1D1D;
+	font-size: 14px;
+	font-weight: 200px;
+	padding: 5px 0;
+	text-align: center;
+	text-decoration: none;
+	width: 103px;
+	margin: 2px;
+	outline: none;
+}
+
+#gamearea button:hover {
+background-color: #FFD640;
+}
+
+/* ====================
+   Image Dissappear on HOver
+   ==================== */
+
+
+/* #head2{
+	max-width: 120px;
+	max-height: 120px;
+}
+
+#head1 {
+	max-width: 120px;
+	max-height: 120px;
+	display:none;
+}
+
+#head1:hover {
+	max-width: 120px;
+	max-height: 120px;
+	opacity:1;
+}
+
+.magic {
+	max-width: 120px;
+	max-height: 120px;
+	display: inline;
+}
+
+.magic #head2 {display:inline-block;}
+.magic #head1 {display:none;}
+.magic:hover #head2 {display: none;}
+.magic:hover #head1 {display: inline-block;} */
