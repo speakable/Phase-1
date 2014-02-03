@@ -1,0 +1,28 @@
+-- EASY STUFF --
+-remove language settings
+-Only space for 150 characters or less.
+
+-- MEDIUM STUFF --
+-ability to type and edit with normal key board during and after speech input (especially delete and backspace keys)
+-ability to control with "select ___", "delete" etc.
+-make it so the brower never has to request mic usage
+
+
+-- WISH LIST --
+-Unknown words are channeled into a neutral response flow. "Oh you like _____?", I see. Cool.
+
+-bad words receive a negative reaction from the character. That's rude! You shouldn't say that! etc.
+3-4 times and the character will end the conversation.
+
+do it consistently and the character will refuse to talk to you. Have to reset account or find a new character
+to speak with.
+
+-Students can change the direction of a conversation by asking a question. Character will answer based on 
+their character profile.
+
+
+Database
+
+1,000-2,000 vocabulary words
+Questions (w/variations)
+Answers (w/variations)

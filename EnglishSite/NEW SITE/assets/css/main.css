@@ -95,8 +95,10 @@ a:after {
 }
 
 .navbar-inverse { /* HEADER COLOR */
-	background-color: #F9C645;
-	border-color: #EBBE47;
+	/* background-color: #F9C645;
+	border-color: #EBBE47; */
+	background-color: #77C2CC;
+	border-color: #77C2CC;
 }
 
 .navbar-inverse .navbar-nav > li > a {

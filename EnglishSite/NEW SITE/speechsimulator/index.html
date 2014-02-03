@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="tags" content="English, Learn English, English games" />
+    <meta name="keywords" content="English games, Study English" />
+    <meta name="description" content="Learn English in a fun and easy way!" />
+    <meta name="author" content="Elliott Hindman and Steven Coull" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+	<title>UNTITLED - Learn to Speak English!</title>
+		
+	<script src="main.js"></script>
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>	 
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+	
+	 <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+	<!-- PAGE SPECIFIC STYLE SHEET -->
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="assets/hover-master/hover-master/css/hover.css" rel="stylesheet" media="all">
+		
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/hover.zoom.js"></script>
+    <script src="assets/js/hover.zoom.conf.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">UNTITLED</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Work</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#.html">Blog</a></li>
+            <li><a href="#.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+	
+<!-- MAIN CONTENT AREA -->	
+
+	<div id="simcontainer">
+		
+		<div id="simsubcontainer">
+		
+		<div id="simdiv">
+				
+				<div id="questiondiv">
+					<h2>Do you like Sushi?</h2>
+					</div>
+					
+					<div id="characterdiv">
+						<img src="img/h.jpg" id="hideto">
+						
+					</div>
+					
+						<div id="speechtotext">
+							<div id="info">
+							  <p id="info_start">Type your answer or click on the mic to perform speech-to-text.</p>
+							  <p id="info_speak_now">Speak now.</p>
+							  <p id="info_no_speech">No speech was detected. You may need to adjust your
+								<a href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892">
+								  microphone settings</a>.</p>
+							  <p id="info_no_microphone" style="display:none">
+								No microphone was found. Ensure that a microphone is installed and that
+								<a href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892">
+								microphone settings</a> are configured correctly.</p>
+							  <p id="info_allow">Click the "Allow" button above to enable your microphone.</p>
+							  <p id="info_denied">Permission to use microphone was denied.</p>
+							  <p id="info_blocked">Permission to use microphone is blocked. To change,
+								go to chrome://settings/contentExceptions#media-stream</p>
+							  <p id="info_upgrade">Web Speech API is not supported by this browser.
+								 Upgrade to <a href="//www.google.com/chrome">Chrome</a>
+								 version 25 or later.</p>
+							</div>
+					
+			<div class="right">
+				<button id="start_button" onclick="startButton(event)">
+					<img id="start_img" src="mic.gif" alt="Start"></button>
+			</div>	
+													
+								<div id="results">
+									  <span id="final_span" class="final"></span>
+									  <span id="interim_span" class="interim"></span>
+									  <p>
+									</div>
+
+
+									<div class="center">
+									  <div class="sidebyside" style="text-align:right">
+										<button id="copy_button" class="button" onclick="#">
+										  Reset Answer</button>
+										<div id="copy_info" class="info">
+										  Press Control-C to copy text.<br>(Command-C on Mac.)
+										</div>
+									  </div>
+									  <div class="sidebyside">
+										<button id="email_button" class="button" onclick="#">>
+										  Send Answer</button>
+										<div id="email_info" class="info">
+										  Text sent to default email application.<br>
+										  (See chrome://settings/handlers to change.)
+										</div>
+									  </div>
+									  <p>
+									  <div id="div_language">
+										<select id="select_language" onchange="updateCountry()"></select>
+										&nbsp;&nbsp;
+										<select id="select_dialect"></select>
+									  </div>
+									</div>
+							
+			</div>
+						
+
+		</div>
+				
+	</div>
+
+
+
+
+<script>
+var langs =
+[['Afrikaans',       ['af-ZA']],
+ ['Bahasa Indonesia',['id-ID']],
+ ['Bahasa Melayu',   ['ms-MY']],
+ ['Català',          ['ca-ES']],
+ ['Čeština',         ['cs-CZ']],
+ ['Deutsch',         ['de-DE']],
+ ['English',         ['en-AU', 'Australia'],
+                     ['en-CA', 'Canada'],
+                     ['en-IN', 'India'],
+                     ['en-NZ', 'New Zealand'],
+                     ['en-ZA', 'South Africa'],
+                     ['en-GB', 'United Kingdom'],
+                     ['en-US', 'United States']],
+ ['Lingua latīna',   ['la']]];
+
+for (var i = 0; i < langs.length; i++) {
+  select_language.options[i] = new Option(langs[i][0], i);
+}
+select_language.selectedIndex = 6;
+updateCountry();
+select_dialect.selectedIndex = 6;
+showInfo('info_start');
+
+function updateCountry() {
+  for (var i = select_dialect.options.length - 1; i >= 0; i--) {
+    select_dialect.remove(i);
+  }
+  var list = langs[select_language.selectedIndex];
+  for (var i = 1; i < list.length; i++) {
+    select_dialect.options.add(new Option(list[i][1], list[i][0]));
+  }
+  select_dialect.style.visibility = list[1].length == 1 ? 'hidden' : 'visible';
+}
+
+var create_email = false;
+var final_transcript = '';
+var recognizing = false;
+var ignore_onend;
+var start_timestamp;
+if (!('webkitSpeechRecognition' in window)) {
+  upgrade();
+} else {
+  start_button.style.display = 'inline-block';
+  var recognition = new webkitSpeechRecognition();
+  recognition.continuous = true;
+  recognition.interimResults = true;
+
+  recognition.onstart = function() {
+    recognizing = true;
+    showInfo('info_speak_now');
+    start_img.src = 'mic-animate.gif';
+  };
+
+  recognition.onerror = function(event) {
+    if (event.error == 'no-speech') {
+      start_img.src = 'mic.gif';
+      showInfo('info_no_speech');
+      ignore_onend = true;
+    }
+    if (event.error == 'audio-capture') {
+      start_img.src = 'mic.gif';
+      showInfo('info_no_microphone');
+      ignore_onend = true;
+    }
+    if (event.error == 'not-allowed') {
+      if (event.timeStamp - start_timestamp < 100) {
+        showInfo('info_blocked');
+      } else {
+        showInfo('info_denied');
+      }
+      ignore_onend = true;
+    }
+  };
+
+  recognition.onend = function() {
+    recognizing = false;
+    if (ignore_onend) {
+      return;
+    }
+    start_img.src = 'mic.gif';
+    if (!final_transcript) {
+      showInfo('info_start');
+      return;
+    }
+    showInfo('');
+    if (window.getSelection) {
+      window.getSelection().removeAllRanges();
+      var range = document.createRange();
+      range.selectNode(document.getElementById('final_span'));
+      window.getSelection().addRange(range);
+    }
+    if (create_email) {
+      create_email = false;
+      createEmail();
+    }
+  };
+
+  recognition.onresult = function(event) {
+    var interim_transcript = '';
+    for (var i = event.resultIndex; i < event.results.length; ++i) {
+      if (event.results[i].isFinal) {
+        final_transcript += event.results[i][0].transcript;
+      } else {
+        interim_transcript += event.results[i][0].transcript;
+      }
+    }
+    final_transcript = capitalize(final_transcript);
+    final_span.innerHTML = linebreak(final_transcript);
+    interim_span.innerHTML = linebreak(interim_transcript);
+    if (final_transcript || interim_transcript) {
+      showButtons('inline-block');
+    }
+  };
+}
+
+function upgrade() {
+  start_button.style.visibility = 'hidden';
+  showInfo('info_upgrade');
+}
+
+var two_line = /\n\n/g;
+var one_line = /\n/g;
+function linebreak(s) {
+  return s.replace(two_line, '<p></p>').replace(one_line, '<br>');
+}
+
+var first_char = /\S/;
+function capitalize(s) {
+  return s.replace(first_char, function(m) { return m.toUpperCase(); });
+}
+
+function createEmail() {
+  var n = final_transcript.indexOf('\n');
+  if (n < 0 || n >= 80) {
+    n = 40 + final_transcript.substring(40).indexOf(' ');
+  }
+  var subject = encodeURI(final_transcript.substring(0, n));
+  var body = encodeURI(final_transcript.substring(n + 1));
+  window.location.href = 'mailto:?subject=' + subject + '&body=' + body;
+}
+
+function copyButton() {
+  if (recognizing) {
+    recognizing = false;
+    recognition.stop();
+  }
+  copy_button.style.display = 'none';
+  copy_info.style.display = 'inline-block';
+  showInfo('');
+}
+
+function emailButton() {
+  if (recognizing) {
+    create_email = true;
+    recognizing = false;
+    recognition.stop();
+  } else {
+    createEmail();
+  }
+  email_button.style.display = 'none';
+  email_info.style.display = 'inline-block';
+  showInfo('');
+}
+
+function startButton(event) {
+  if (recognizing) {
+    recognition.stop();
+    return;
+  }
+  final_transcript = '';
+  recognition.lang = select_dialect.value;
+  recognition.start();
+  ignore_onend = false;
+  final_span.innerHTML = '';
+  interim_span.innerHTML = '';
+  start_img.src = 'mic-slash.gif';
+  showInfo('info_allow');
+  showButtons('none');
+  start_timestamp = event.timeStamp;
+}
+
+function showInfo(s) {
+  if (s) {
+    for (var child = info.firstChild; child; child = child.nextSibling) {
+      if (child.style) {
+        child.style.display = child.id == s ? 'inline' : 'none';
+      }
+    }
+    info.style.visibility = 'visible';
+  } else {
+    info.style.visibility = 'hidden';
+  }
+}
+
+var current_style;
+function showButtons(style) {
+  if (style == current_style) {
+    return;
+  }
+  current_style = style;
+  copy_button.style.display = style;
+  email_button.style.display = style;
+  copy_info.style.display = 'none';
+  email_info.style.display = 'none';
+}
+</script>
+</div><br>
+<br>
+<br>
+
+	<!-- +++++ Footer Section +++++ -->
+	
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<h4>My Bunker</h4>
+					<p>
+						Kojirakawa-mach 9-8-17,<br/>
+						+34 9054 5455, <br/>
+						Yamagata, Japan.
+					</p>
+				</div><!-- /col-lg-4 -->
+				
+				<div class="col-lg-4">
+					<h4>My Links</h4>
+					<p>
+						<a href="#">Dribbble</a><br/>
+						<a href="#">Twitter</a><br/>
+						<a href="#">Facebook</a>
+					</p>
+				</div><!-- /col-lg-4 -->
+				
+				<div class="col-lg-4">
+					<h4>About UNTITLED</h4>
+					<p>Changing the way you study languages.</p>
+				</div><!-- /col-lg-4 -->
+			
+			</div>
+		
+		</div>
+	</div>
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

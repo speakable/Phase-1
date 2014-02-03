@@ -1,5 +1,8 @@
 ﻿#ww {
-	background-color: white;
+	background-image: url(img/mountain.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: #879E3E;
 }
 
 #footer {
@@ -24,6 +27,10 @@ body {
 	display: inline-block;
 	background-color: none;
 	margin: 10px; 
+}
+
+#rawtext {
+	color: white;
 }
 
 /* ====================
