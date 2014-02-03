@@ -84,34 +84,33 @@ background-color: #FFD640;
 }
 
 /* ====================
-   Image Dissappear on HOver
+   CSS Dialogue Box
    ==================== */
 
+.ui-dialog { /* The outer container of the dialog */
+	
+} 
 
-/* #head2{
-	max-width: 120px;
-	max-height: 120px;
+.ui-dialog-titlebar { /* The title bar containing the dialog's title and close button */
+	
+} 
+
+.ui-dialog-title { /* The container around the textual title of the dialog */
+
 }
 
-#head1 {
-	max-width: 120px;
-	max-height: 120px;
-	display:none;
-}
+.ui-dialog-titlebar-close { /* The dialog's close button. */
+	
+} 
 
-#head1:hover {
-	max-width: 120px;
-	max-height: 120px;
-	opacity:1;
-}
+.ui-dialog-content { /* The container around the dialog's content. This is also the element the widget was instantiated with */
+	
+} 
 
-.magic {
-	max-width: 120px;
-	max-height: 120px;
-	display: inline;
-}
+.ui-dialog-buttonpane { /* The pane that contains the dialog's buttons. This will only be present if the buttons option is set */
+	
+} 
 
-.magic #head2 {display:inline-block;}
-.magic #head1 {display:none;}
-.magic:hover #head2 {display: none;}
-.magic:hover #head1 {display: inline-block;} */
+.ui-dialog-buttonset { /* The container around the buttons themselves */
+	
+}
