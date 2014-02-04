@@ -5,15 +5,11 @@
 		<meta name="tags" content="English, Learn English, English games" />
 		<meta name="keywords" content="English games, Study English" />
 		<meta name="description" content="Learn English in a fun and easy way!" />
-		<meta name="author" content="Elliott Hindman and Steven Coull" />
+		<meta name="author" content="Elliott Hindman and Steven Coull and Zachary Durland" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
 		<title>UNTITLED - Learn to Speak English!</title>
-
-		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 
 		<!-- Bootstrap core CSS -->
 		<link href="../assets/css/bootstrap.css" rel="stylesheet">
@@ -23,11 +19,18 @@
 
 		<!-- PAGE SPECIFIC STYLE SHEET -->
 		<link rel="stylesheet" type="text/css" href="main.css">
-		<link href="../assets/hover-master/hover-master/css/hover.css" rel="stylesheet" media="all
+
 		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 		<script src="../assets/js/hover.zoom.js"></script>
 		<script src="../assets/js/hover.zoom.conf.js"></script>
+
+		<!-- PAGE SPECIFIC JAVASCRIPT -->
 		<script src="main.js"></script>
+		<script src="buzz.js"></script>
+		<script src="buzz.min.js"></script>
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -47,21 +50,21 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html">UNTITLED</a>
+					<a class="navbar-brand" href="../index.html">UNTITLED</a>
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="#">Work</a>
+							<a href="index.html">Games</a>
 						</li>
 						<li>
-							<a href="#">About</a>
+							<a href="../demos.html">Demos</a>
 						</li>
 						<li>
-							<a href="#.html">Blog</a>
+							<a href="../about.html">About</a>
 						</li>
 						<li>
-							<a href="#.html">Contact</a>
+							<a href="../contact.html">Contact</a>
 						</li>
 					</ul>
 				</div><!--/.nav-collapse -->
@@ -70,29 +73,67 @@
 
 		<!-- MAIN CONTENT AREA -->
 
-		<div id="simcontainer">
+		<div id="ww">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 centered">
 
-			<div id="simsubcontainer">
+						<div id="face">
+							<div id="facediv">
+								<table id ="tools">
+									<tr>
+										<td id="t1"><img id="tb1" src="images/wrench.png"></td>
+										<td id="t2"><img id="tb2" src="images/wrench.png"></td>
+									</tr>
+									<tr>
+										<td id="t3"><img id="tb3" src="images/wrench.png"></td>
+										<td id="t4"><img id="tb4"src="images/wrench.png"></td>
+									</tr>
+									<tr>
+										<td id="t5"><img id="tb5" src="images/wrench.png"></td>
+										<td id="t6"><img id="tb6" src="images/wrench.png"></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div id="gamearea">
+							<table id ="robot">
+								<tr>
+									<td id="r1"><img id="rb1" src="images/robot/r1.png"></td>
+									<td id="r2"><img id="rb2" src="images/robot/r2.png"></td>
+								</tr>
+								<tr>
+									<td id="r3"><img id="rb3" src="images/robot/r3.png"></td>
+									<td id="r4"><img id="rb4"src="images/robot/r4.png"></td>
+								</tr>
+								<tr>
+									<td id="r5"><img id="rb5" src="images/robot/r5.png"></td>
+									<td id="r6"><img id="rb6" src="images/robot/r6.png"></td>
+								</tr>
+							</table>
+						</div>
 
-				<div id="simdiv">
+						<div id="clock_div">
+							<ul id="clock">
+								<li id="sec"></li>
+								<li id="hour"></li>
+								<li id="min"></li>
+							</ul>
+						</div>
 
-					<div id="questiondiv">
-						<h2>Do you like Sushi?</h2>
-					</div>
+						<div id="dialog" title="Good Job!"></div>
 
-					<div id="characterdiv">
-						<img src="img/h.jpg" id="hideto">
-					</div>
+						<script>
+							$(document).ready(function() {
+								startgame();
+							});
+						</script>
 
-					<div id="speechinputholder">
-						<input id="speech-input-field" type="text" x-webkit-speech="">
-					</div>
-
-				</div>
-
+					</div><!-- /col-lg-8 -->
+				</div><!-- /row -->
 			</div>
-
-		</div>
+			<!-- /container -->
+		</div><!-- /ww -->
 
 		<!-- +++++ Footer Section +++++ -->
 
@@ -100,7 +141,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-4">
-						<h4>My Bunker</h4>
+						<h4>Our Bunker</h4>
 						<p>
 							Kojirakawa-mach 9-8-17,
 							<br/>

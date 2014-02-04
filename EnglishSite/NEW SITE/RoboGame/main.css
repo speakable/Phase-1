@@ -1,0 +1,113 @@
+﻿#ww {
+	background-image: url(images/mountain.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: #879E3E;
+}
+
+#footer {
+	text-align: center;
+}
+
+
+#gamearea {
+	background-color: none;
+	text-align: center;
+	position: absolute;
+	top: 15%;
+	left: 42%;
+	cursor: pointer;
+}
+
+#robot td {
+	padding: 0px;
+	margin: 0px;
+	font-size: 29px;
+}
+
+#robot {
+	border-collapse: collapse;
+}
+
+#tools td {
+	padding: 0px;
+	margin: 0px;
+	font-size: 29px;
+}
+
+#tools {
+	border-collapse: collapse;
+}
+
+#clock_div {
+	text-align: center;
+	padding: 1px;
+	margin: 0px;
+	position: absolute;
+	top: 25%;
+	right: 10%;
+	min-width: 200px;
+	min-height: 200px;
+}
+
+#dialog {
+	display: none;
+}
+
+/* ====================
+ Clock
+ ==================== */
+
+#clock {
+	position: relative;
+	width: 120px;/*600*/
+	height: 120px;/*600*/
+	margin: 20px auto 0 auto;
+	background: url(images/clockface.png);
+	list-style: none;
+}
+
+#sec {
+	position: absolute;
+	width: 6px;/*30*/
+	height: 120px;/*600*/
+	top: 0px;
+	left: 57px;/*285*/
+}
+
+#sec {
+	background: url(images/sechand.png);
+	z-index: 3;
+}
+
+/* ====================
+ CSS Dialogue Box
+ ==================== */
+
+.ui-dialog {/* The outer container of the dialog */
+
+}
+
+.ui-dialog-titlebar {/* The title bar containing the dialog's title and close button */
+
+}
+
+.ui-dialog-title {/* The container around the textual title of the dialog */
+
+}
+
+.ui-dialog-titlebar-close {/* The dialog's close button. */
+
+}
+
+.ui-dialog-content {/* The container around the dialog's content. This is also the element the widget was instantiated with */
+
+}
+
+.ui-dialog-buttonpane {/* The pane that contains the dialog's buttons. This will only be present if the buttons option is set */
+
+}
+
+.ui-dialog-buttonset {/* The container around the buttons themselves */
+
+}
