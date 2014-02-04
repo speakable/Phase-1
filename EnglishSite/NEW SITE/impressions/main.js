@@ -22,7 +22,7 @@ function startgame() {
 		width : 'auto',
 		height : 'auto'
 	});
-	
+
 	grabImage();
 	setButtonAnswers();
 }
@@ -56,28 +56,36 @@ function gamefinished() {
 }
 
 function grabImage() {
-	lastid = getNum(lastid, choices.length);
+	lastid = getNum([lastid], choices.length);
 	$("#icon").attr("src", "img/" + lastid + ".png");
 }
 
 function setButtonAnswers() {
 	rightanswer = getNum(0, 3);
+	answers = [lastid - 1];
 	$("#c" + rightanswer + "Btn").html(choices[lastid - 1]);
 	if (rightanswer != 1) {
-		$("#c1Btn").html(choices[getNum(lastid - 1, choices.length)]);
+		answer = getNum(answers, choices.length);
+		answers = answers + answer;
+		$("#c1Btn").html(choices[answer]);
 	}
 	if (rightanswer != 2) {
-		$("#c2Btn").html(choices[getNum(lastid - 1, choices.length)]);
+		answer = getNum(answers, choices.length);
+		answers = answers + answer;
+		$("#c2Btn").html(choices[answer]);
 	}
 	if (rightanswer != 3) {
-		$("#c3Btn").html(choices[getNum(lastid - 1, choices.length)]);
+		answer = getNum(answers, choices.length);
+		$("#c3Btn").html(choices[answer]);
 	}
 }
 
 function getNum(lastNum, limit) {
 	var num = Math.ceil((Math.random() * limit));
-	if (num == lastNum) {
-		return getNum(lastNum, limit);
+	for (var i = 0; i < lastNum.length; i++) {
+		if (num == lastNum[i]) {
+			return getNum(lastNum, limit);
+		}
 	}
 	return num;
 }
