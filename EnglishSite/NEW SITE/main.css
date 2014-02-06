@@ -2,14 +2,86 @@
 	text-align: center;
 }
 
-#aboutimage {
-	background-image: url(assets/img/about.png);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	position: relative;
-	min-height: 8215px;
-	min-width: 380px;
+/* ABOUT CSS STYLES */
+
+.maincontainer {
+	padding-top: 50px;
+	padding-right: 22%;
+	padding-left: 22%;
+	background-color: #77C2CC;
 }
+
+.minicontainer, .minicontainerblk {
+	height: 550px;
+	overflow: hidden;
+}
+
+.minicontainer * {
+	color: white;
+	font-weight: 200;
+}
+
+.minicontainerblk * {
+	color: #666966;
+	font-weight: 200;
+}
+
+#mini1 {
+	background-color: #EBBE47;
+	padding: 50px;
+}
+
+.socialicons, #target {
+	padding: 5%;
+}
+
+#mini2 {
+	background-color: #FFFFFF;
+	padding: 30px 50px;
+	height: 680px;
+}
+
+.images {
+	padding-left: 9%;
+	padding-top: 3%;
+	width: 29%;
+}
+
+#mini3 {
+	background-color: #705686;
+	padding: 30px 50px;
+	height: 950px;
+}
+
+#convosim2 {
+	padding-right: 11%;
+	padding-left: 11%;
+	width: 100%;
+}
+
+#mini4 {
+	background-color: #EBBE47;
+	padding: 30px 50px;
+	height: 900px;
+}
+
+#mini5 {
+	background-color: #34BA85;
+}
+
+#mini6 {
+	background-color: #FFFFFF;
+}
+
+#mini7 {
+	background-color: #705686;
+}
+
+#mini8 {
+	background-color: #A69F95;
+}
+
+/* DEMOS CSS STYLES */
 
 #animationdemos {
 	min-height: 480px;
