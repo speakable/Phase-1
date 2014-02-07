@@ -1,8 +1,4 @@
-﻿#footer {
-	text-align: center;
-}
-
-/* ABOUT CSS STYLES */
+﻿/* ABOUT CSS STYLES */
 
 .maincontainer {
 	padding-top: 50px;
@@ -18,12 +14,10 @@
 
 .minicontainer * {
 	color: white;
-	font-weight: 200;
 }
 
 .minicontainerblk * {
 	color: #666966;
-	font-weight: 200;
 }
 
 #mini1 {
@@ -41,11 +35,13 @@
 	height: 680px;
 }
 
-.images {
-	padding-left: 9%;
-	padding-top: 3%;
-	width: 29%;
+#graphics {
+	width: 95%;
+	margin: 50px 5px;
+	text-align: center;
 }
+
+
 
 #mini3 {
 	background-color: #705686;
@@ -59,14 +55,46 @@
 	width: 100%;
 }
 
+
 #mini4 {
+	background-color: #34BA85;
+	padding: 30px 50px;
+	height: 1000px;
+}
+
+#comp {
+	width: 60%;
+}
+
+#compdiv {
+	text-align: center;
+}
+
+#phone {
+	width: 25%;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+}
+
+#phonediv {
+	text-align: center;
+}
+
+#mini5 {
 	background-color: #EBBE47;
 	padding: 30px 50px;
 	height: 900px;
 }
 
-#mini5 {
-	background-color: #34BA85;
+#meetus {
+	background-color: none;
+}
+
+.meet {
+	padding: 5%;
+	padding-right: 15%;
+	width: 90%;
 }
 
 #mini6 {
