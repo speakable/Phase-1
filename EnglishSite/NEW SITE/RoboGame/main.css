@@ -1,16 +1,61 @@
-﻿#ww {
-	background-image: url(images/mountain.png);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-color: #879E3E;
+﻿#maincontainer {
+	background-color: #77C2CC;
+	height: 400px;
+	padding: 20px;
 }
 
-#gamearea {
-	background-color: none;
-	text-align: center;
+#gamecontainer {
+	position: relative;
+	top: 50%;
+	
+	
+}
+
+#grass {
+	background-color: #879E3E;
+	height: 220px;
+}
+
+#mount1 {
 	position: absolute;
-	top: 15%;
-	left: 42%;
+	top:60%;
+	left:1%;
+}
+
+#mount2 {
+	position: absolute;
+	top:60%;
+	left:12%;
+}
+
+#mount3 {
+	position: absolute;
+	top:60%;
+	right:2%;
+}
+
+#mount4 {
+	position: absolute;
+	top:60%;
+	right:10%;
+}
+
+#cloudbig {
+	position: absolute;
+	top:37%;
+	right:13%;
+}
+
+#cloudbig2 {
+	position: absolute;
+	top:50%;
+	left:13.2%;
+}
+
+#tools td {
+	padding: 0px;
+	margin: 0px;
+	font-size: 29px;
 	cursor: pointer;
 }
 
@@ -18,31 +63,29 @@
 	padding: 0px;
 	margin: 0px;
 	font-size: 29px;
+	cursor: pointer;
 }
 
-#robot {
-	border-collapse: collapse;
-}
-
-#tools td {
-	padding: 0px;
-	margin: 0px;
-	font-size: 29px;
-}
-
-#tools {
-	border-collapse: collapse;
-}
-
-#clock_div {
-	text-align: center;
-	padding: 1px;
-	margin: 0px;
+#toolsdiv {
+	width: 120px;
 	position: absolute;
-	top: 25%;
-	right: 10%;
-	min-width: 200px;
-	min-height: 200px;
+	top: 35%;
+	left: 32%;
+}
+
+#robotdiv {
+	width: 195px;
+	position: absolute;
+	top: 50%;
+	left: 43.5%;
+}
+
+#clockdiv {
+	height: 120px;
+	width: 120px;
+	position: absolute;
+	top: 35%;
+	right: 29%;
 }
 
 #dialog {
@@ -54,10 +97,8 @@
  ==================== */
 
 #clock {
-	position: relative;
 	width: 120px;/*600*/
 	height: 120px;/*600*/
-	margin: 20px auto 0 auto;
 	background: url(images/clockface.png);
 	list-style: none;
 }
