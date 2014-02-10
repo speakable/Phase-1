@@ -1,0 +1,87 @@
+﻿/* glyphicon Configuration */
+
+.glyphicon {
+	font-size: 40px;
+	color: #1abc9c;
+}
+
+.targetWord {
+	font-size: 30px;
+	letter-spacing: 2px;
+	padding: 25px;
+	color: #f4f4f4;
+}
+
+/* body visual element styles */
+
+.wordCard {
+	position: relative;
+	float: left;
+	border-color: #c35757;
+	border-style: none;
+	border-radius: 20px;
+	box-shadow: 0px 2px 1px #b9b9b9;
+	background-color: #ccc;
+	padding: none;
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	line-height: 85px;
+	margin: 15px;
+	background-image: none;
+}
+
+.pictureCard {
+	position: relative;
+	float: left;
+	border-style: none;
+	border-radius: 20px;
+	box-shadow: 0px 2px 1px #b9b9b9;
+	padding: none;
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	line-height: 85px;
+	margin: 15px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+#scoreCard {
+	padding-bottom: 20px;
+}
+
+#score {
+	width: 75px;
+	height: 75px;
+	font-size: 2em;
+	color: #8ee557;
+	margin: 0 auto;
+	border: 0px solid #999;
+	line-height: 100px;
+	text-align: center;
+}
+
+#time {
+	width: 75px;
+	height: 75px;
+	font-size: 2em;
+	color: #8ee557;
+	margin: 0 auto;
+	border: 0px solid #999;
+	line-height: 100px;
+	text-align: center;
+}
+
+#gamearea1 {
+	background-color: none;
+	min-height: 580px;
+	padding-top: 10px;
+	text-align: center;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
