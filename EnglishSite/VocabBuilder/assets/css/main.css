@@ -301,6 +301,17 @@ bt {
     text-align:center;
 }
 
+#time {
+    width:75px;
+    height: 75px;
+    font-size: 2em;
+    color: #8ee557;
+    margin: 0 auto;
+    border: 0px solid #999;
+    line-height: 100px;
+    text-align:center;
+}
+
 #gamearea1 {
 	background-color: none;
 	min-height: 580px;
