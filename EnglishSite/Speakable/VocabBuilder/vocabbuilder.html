@@ -65,25 +65,29 @@
 
 		<!-- MAIN CONTENT AREA -->
 
-		<div id="scoreCard">
-			<p id="score">
-				0
-			</p>
-			<p id="time">
-				60
-			</p>
+		<div id="gamecontainer">
+
+			<div id="scoreCard">
+				<p id="score">
+					0
+				</p>
+				<p id="time">
+					60
+				</p>
+			</div>
+
+			<div id="gamecontainer">
+				<div id="gamearea1"></div>
+			</div>
+
+			<script>
+				$(document).ready(function() {
+					startgame();
+				});
+			</script>
+
 		</div>
-
-<div id="gamecontainer">
-		<div id="gamearea1"></div>
-</div>
-
-		<script>
-			$(document).ready(function() {
-				startgame();
-			});
-		</script>
-
+		
 		<!-- +++++ Footer Section +++++ -->
 
 		<div id="footer">
