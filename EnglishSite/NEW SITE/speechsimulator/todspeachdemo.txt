@@ -1,8 +1,0 @@
--First word is capitalized when transcription occurs
--Punctuation is added automatically
-
-Database
-
-1,000-2,000 vocabulary words
-Questions (w/variations)
-Answers (w/variations)
