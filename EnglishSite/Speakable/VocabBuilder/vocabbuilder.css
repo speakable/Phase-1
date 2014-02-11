@@ -22,12 +22,12 @@
 	border-radius: 20px;
 	box-shadow: 0px 2px 1px #b9b9b9;
 	background-color: #ccc;
-	padding: none;
+	padding: 30px 0px;
 	width: 150px;
 	height: 150px;
 	text-align: center;
 	line-height: 85px;
-	margin: 15px;
+	margin: 10px;
 	background-image: none;
 	cursor: pointer;
 }
@@ -43,42 +43,49 @@
 	height: 150px;
 	text-align: center;
 	line-height: 85px;
-	margin: 15px;
+	margin: 10px;
 	overflow-x: hidden;
 	overflow-y: hidden;
 	cursor: pointer;
 }
 
 #scoreCard {
-	padding-bottom: 20px;
+	min-height: 500px;
+	width: 200px;
+	float: right;
+	padding: 60px;
+	background-color: #77C2CC;
 }
 
 #score {
 	width: 75px;
 	height: 75px;
 	font-size: 2em;
-	color: #8ee557;
+	color: ##213141;
 	margin: 0 auto;
 	border: 0px solid #999;
 	line-height: 100px;
 	text-align: center;
+	float: right;
 }
 
 #time {
 	width: 75px;
 	height: 75px;
 	font-size: 2em;
-	color: #8ee557;
+	color: ##213141;
 	margin: 0 auto;
 	border: 0px solid #999;
 	line-height: 100px;
 	text-align: center;
+	float: right;
 }
 
 #gamearea1 {
-	background-color: none;
-	min-height: 580px;
-	padding-top: 10px;
+	background-color: white;
+	min-height: 500px;
+	padding: 70px 50px;
+	margin-right: 200px;
 	text-align: center;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -87,3 +94,4 @@
 	-ms-user-select: none;
 	user-select: none;
 }
+
