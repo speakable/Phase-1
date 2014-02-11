@@ -18,7 +18,7 @@ function createFlashcards() {
 	vocab = shuffleArray(vocab);
 	for (var i = 0; i < vocab.length; i++) {
 		var word = vocab[i];
-		$("#gamearea1").append("<div id='" + word + "' class='pictureCard'><img src='img/" + word + ".png'></div>");
+		$("#gamearea1").append("<div id='" + word + "' class='pictureCard pullUp'><img src='img/" + word + ".png'></div>");
 	}
 	vocab = shuffleArray(vocab);
 	for (var i = 0; i < vocab.length; i++) {
@@ -101,7 +101,7 @@ function clock() {
 		$("#time").text(--time);
 		if (time == 0) {
 			clearInterval(timerid);
-			$("#time").text("Time up!");
+			$("#time").text("Time is up!");
 			stop = true;
 		}
 	}, 1000);
