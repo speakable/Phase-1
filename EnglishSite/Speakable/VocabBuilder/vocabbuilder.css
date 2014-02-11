@@ -29,6 +29,7 @@
 	line-height: 85px;
 	margin: 15px;
 	background-image: none;
+	cursor: pointer;
 }
 
 .pictureCard {
@@ -45,6 +46,7 @@
 	margin: 15px;
 	overflow-x: hidden;
 	overflow-y: hidden;
+	cursor: pointer;
 }
 
 #scoreCard {
