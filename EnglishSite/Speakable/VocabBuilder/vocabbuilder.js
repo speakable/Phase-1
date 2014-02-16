@@ -1,11 +1,16 @@
-var vocab = ["apple", "cherry", "grapes", "lemon", "orange", "pear"];
+var fruit = ["apple", "cherry", "grape", "lemon", "orange", "pear"];
+var clubs = ["art", "baseball_ball", "baseball", "basketball", "brass_band", "table_tennis", "volleyball"];
+var things = ["chimney", "envelope", "eraser", "flower_pot", "grass", "money", "refrigerator", "USB_drive", "watch"];
 
+var vocab = [];
 var wordcard = "nothing";
 var piccard = "nothing";
 var score = 0;
 var time = 60;
 var wordsremaining;
 var stop = false;
+var currentDeck = "things";
+var folder = "500px72dpi/";
 
 function startgame() {
 
@@ -14,16 +19,27 @@ function startgame() {
 }
 
 function createFlashcards() {
+	if (currentDeck == "things") {
+		currentDeck = "fruit";
+		vocab = fruit;
+	} else if (currentDeck == "fruit") {
+		currentDeck = "clubs";
+		vocab = clubs;
+	} else {
+		currentDeck = "things";
+		vocab = things;
+	}
+
 	wordsremaining = vocab.length;
 	vocab = shuffleArray(vocab);
 	for (var i = 0; i < vocab.length; i++) {
 		var word = vocab[i];
-		$("#gamearea1").append("<div id='" + word + "' class='pictureCard pullUp'><img src='img/" + word + ".png'></div>");
+		$("#gamearea1").append("<div id='" + word + "' class='pictureCard pullUp'><img class ='picture' src='img/" + folder + currentDeck + "/" + word + ".png'></div>");
 	}
 	vocab = shuffleArray(vocab);
 	for (var i = 0; i < vocab.length; i++) {
 		var word = vocab[i];
-		$("#gamearea1").append("<div id='" + word + "' class='wordCard'><p class='targetWord'>" + word + "</p></div>");
+		$("#gamearea1").append("<div id='" + word + "' class='wordCard'><p class='targetWord'>" + word.replace("_", " ") + "</p></div>");
 	}
 
 	$(".wordCard, .pictureCard").click(function() {
