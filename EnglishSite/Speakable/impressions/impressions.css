@@ -8,8 +8,8 @@
 	text-align: center;
 }
 
-#mount1 {
-	position: absolute;
+/*#mount1 {
+	position: z;
 	top:60%;
 	left:1%;
 }
@@ -42,7 +42,7 @@
 	position: absolute;
 	top:50%;
 	left:13.2%;
-}
+}*/
 
 #grass {
 	background-color: #879E3E;

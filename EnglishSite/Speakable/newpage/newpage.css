@@ -1,0 +1,15 @@
+			.wrapper {
+				text-align: center;
+				height: 100%;
+			}
+
+			.main section.page1 {
+				background: #2098D1;
+			}
+			.main section.page2 {
+				background: #006600;
+			}
+
+			.main section.page3 {
+				background: #CE8483;
+			}
