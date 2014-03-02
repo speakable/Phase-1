@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-	
+<!doctype html>
+<html>
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,118 +11,115 @@
 		<link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
 		<title>SPEAKABLE - Learn to Speak English!</title>
-		<!-- thisisatest -->
 
-		<!-- Bootstrap core CSS -->
-		<link href="assets/css/bootstrap.css" rel="stylesheet">
-
-		<!-- Custom styles for this template -->
-		<link href="assets/css/main.css" rel="stylesheet">
-
-		<!-- PAGE SPECIFIC STYLE SHEET -->
-		<link rel="stylesheet" type="text/css" href="main.css">
-		<link href="assets/hover-master/hover-master/css/hover.css" rel="stylesheet" media="all">
-		
-		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+		<link href="newpage.css" rel="stylesheet" type="text/css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="assets/libraries/onepage-scroll-master/jquery.onepage-scroll.js"></script>
+		<link href="assets/libraries/onepage-scroll-master/onepage-scroll.css" rel="stylesheet" type="text/css">
 
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-		<![endif]-->
+		<script>
+			$(document).ready(function() {
+				$(".main").onepage_scroll({
+					sectionContainer : "section",
+					responsiveFallback : 600
+				});
+			});
+		</script>
 	</head>
-
 	<body>
 
-		<!-- Static navbar -->
-		<div class="navbar navbar-inverse navbar-static-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html">SPEAKABLE</a>
-				</div>
-				<div class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<a href="impressions/impressions.html">Games</a>
-						</li>
-						<li>
-							<a href="VocabBuilder/vocabbuilder.html">Words</a>
-						</li>
-						<li>
-							<a href="about.html">About</a>
-						</li>
-						<li>
-							<a href="contact.html">Contact</a>
-						</li>
-					</ul>
-				</div><!--/.nav-collapse -->
+		<header>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">About</a>
+					</li>
+					<li>
+						<a href="#">Profile</a>
+					</li>
+					<li>
+						<a href="#">Contact</a>
+					</li>
+				</ul>
+			</nav>
+
+			<a href="index.html"><img class="nav_logo pop" src="assets/img/temp_nav_logo.png"></a>
+
+		</header>
+
+		<div class="wrapper">
+			<div class="main">
+
+				<section class="page1">
+					<div class="page_container">
+
+						<div class="custom_panel_1">
+							<img class="elliott_image" src="assets/img/elliot's_profile_image.png">
+							<img class="speech_bubble" src="assets/img/hi_im_elliot.png">
+							<img class="welcome_logo" src="assets/img/welcome_to_speakable.png">
+							<img class="large_logo" src="assets/img/panel_1_background_large_logo.png">
+							<img class="next_button" src="assets/img/next_panel_button.png" >
+						</div>
+
+					</div>
+				</section>
+
+				<section class="page2">
+					<div class="page_container">
+						<p>
+							Elliot's About Page
+						</p>
+					</div>
+				</section>
+
+				<section class="page3">
+					<div class="page_container">
+						<p>
+							Impressions
+						</p>
+					</div>
+				</section>
+				
+				<section class="page4">
+					<div class="page_container">
+						<p>
+							Zach's About Page
+						</p>
+					</div>
+				</section>
+
+				<section class="page5">
+					<div class="page_container">
+						<p>
+							I'm not a Robot!
+						</p>
+					</div>
+				</section>
+				
+				<section class="page6">
+					<div class="page_container">
+						<p>
+							Steven's About Page
+						</p>
+					</div>
+				</section>
+
+				<section class="page7">
+					<div class="page_container">
+						<p>
+							Flashcards
+						</p>
+					</div>
+				</section>
+				
+				<section class="page8">
+					<div class="page_container">
+						<p>
+							Mailing List
+						</p>
+					</div>
+				</section>
 			</div>
 		</div>
-
-		<!-- +++++ Welcome Section +++++ -->
-
-		<div class="container pt">
-			<div class="row mt">
-				<div class="col-lg-6 col-lg-offset-3 centered">
-
-					<img src="assets/img/user.png" alt="Stanley" class="buzz">
-					<h1>Hello everbody, We Are UNTITLED!</h1>
-					<p>
-						We are a language software and game developer based in Japan. We build <a href="#">games</a> and <a href="#">language software</a> to make learning English as interesting and fun as possible.
-					</p>
-				</div>
-			</div><!-- /row -->
-		</div><!-- /container -->
-
-		<!-- +++++ Footer Section +++++ -->
-
-		<div id="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4">
-						<h4>Our Bunker</h4>
-						<p>
-							Kojirakawa-mach 9-8-17,
-							<br/>
-							+34 9054 5455,
-							<br/>
-							Yamagata, Japan.
-						</p>
-					</div><!-- /col-lg-4 -->
-
-					<div class="col-lg-4">
-						<h4>My Links</h4>
-						<p>
-							<a href="#">Twitter</a>
-							<br/>
-							<a href="#">Facebook</a>
-							<br/>
-							<a href="#">Instagram</a>
-						</p>
-					</div><!-- /col-lg-4 -->
-
-					<div class="col-lg-4">
-						<h4>About SPEAKABLE</h4>
-						<p>
-							Changing the way you study languages.
-						</p>
-					</div><!-- /col-lg-4 -->
-
-				</div>
-
-			</div>
-		</div>
-
-		<!-- Bootstrap core JavaScript
-		================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="assets/js/bootstrap.min.js"></script>
 	</body>
 </html>
