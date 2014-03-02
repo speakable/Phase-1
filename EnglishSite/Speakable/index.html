@@ -14,8 +14,16 @@
 
 		<link href="newpage.css" rel="stylesheet" type="text/css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		
+		<!-- For Dialog -->
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+		<!-- Libraries -->
 		<script type="text/javascript" src="assets/libraries/onepage-scroll-master/jquery.onepage-scroll.js"></script>
 		<link href="assets/libraries/onepage-scroll-master/onepage-scroll.css" rel="stylesheet" type="text/css">
+		<!-- Game files -->
+		<script src="impressions/impressions.js"></script>
+		<link href="impressions/impressions.css" rel="stylesheet" type="text/css">
 
 		<script>
 			$(document).ready(function() {
@@ -74,12 +82,44 @@
 
 				<section class="page3">
 					<div class="page_container">
-						<p>
-							Impressions
-						</p>
+						<div id="maincontainer">
+							<div id="gamecontainer">
+								<div id="dialog" title="Impressions">
+								</div>
+
+								<div id="face">
+									<div class="face_pic" id="facediv"></div>
+									<p id="rawtext">
+										score
+									</p>
+
+								</div>
+
+								<div id="gamearea"></div>
+
+								<div id="clock_div">
+									<ul id="clock">
+										<li id="sec"></li>
+										<li id="hour"></li>
+										<li id="min"></li>
+									</ul>
+									<p id="rawtext">
+										timer
+									</p>
+								</div>
+
+								<div id="dialog" title="Good Job!"></div>
+								<script>
+									$(document).ready(function() {
+										startimpressions();
+									});
+								</script>
+
+							</div>
+						</div>
 					</div>
 				</section>
-				
+
 				<section class="page4">
 					<div class="page_container">
 						<p>
@@ -95,7 +135,7 @@
 						</p>
 					</div>
 				</section>
-				
+
 				<section class="page6">
 					<div class="page_container">
 						<p>
@@ -111,7 +151,7 @@
 						</p>
 					</div>
 				</section>
-				
+
 				<section class="page8">
 					<div class="page_container">
 						<p>

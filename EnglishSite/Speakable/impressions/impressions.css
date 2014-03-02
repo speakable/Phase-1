@@ -1,0 +1,120 @@
+﻿#maincontainer {
+	background-color: #77C2CC;
+	padding: 50px 150px;
+}
+
+#gamecontainer {
+	background-color: none;
+	text-align: center;
+}
+
+#grass {
+	background-color: #879E3E;
+	height: 220px;
+}
+
+.face_pic img {
+	height: 128px;
+	width: 128px;
+}
+
+body {
+	font-weight: 200;
+	margin: 0 auto;
+	width: 100%;
+	clear: both;
+}
+
+#face, #gamearea, #clock_div {
+	display: inline-block;
+	background-color: none;
+	margin: 10px;
+}
+
+#rawtext {
+	color: white;
+}
+
+/* ====================
+ Clock
+ ==================== */
+
+#clock {
+	position: relative;
+	width: 120px;
+	height: 120px;
+	background: url(img/clockface.png);
+	list-style: none;
+	background-repeat: no-repeat;
+}
+
+#sec {
+	position: absolute;
+	width: 6px;
+	height: 120px;
+	top: 0px;
+	left: 57px;
+}
+
+#sec {
+	background: url(img/sechand.png);
+	z-index: 3;
+	background-repeat: no-repeat;
+}
+
+/* ====================
+ Buttons
+ ==================== */
+
+#gamearea button {
+	background: #FFF;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-left: 1px solid #E8E8E8;
+	color: #1D1D1D;
+	font-size: 14px;
+	font-weight: 200px;
+	padding: 5px 0;
+	text-align: center;
+	text-decoration: none;
+	width: 103px;
+	margin: 2px;
+	outline: none;
+}
+
+#gamearea button:hover {
+	background-color: #FFD640;
+}
+
+/* ====================
+ CSS Dialogue Box
+ ==================== */
+
+.ui-dialog {/* The outer container of the dialog */
+
+}
+
+.ui-dialog-titlebar {/* The title bar containing the dialog's title and close button */
+
+}
+
+.ui-dialog-title {/* The container around the textual title of the dialog */
+
+}
+
+.ui-dialog-titlebar-close {/* The dialog's close button. */
+
+}
+
+.ui-dialog-content {/* The container around the dialog's content. This is also the element the widget was instantiated with */
+
+}
+
+.ui-dialog-buttonpane {/* The pane that contains the dialog's buttons. This will only be present if the buttons option is set */
+
+}
+
+.ui-dialog-buttonset {/* The container around the buttons themselves */
+
+}
