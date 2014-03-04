@@ -1,6 +1,6 @@
 var fruit = ["apple", "cherries", "grapes", "lemon", "orange", "pear"];
-var clubs = ["art", "baseball", "basketball", "brass_band", "table_tennis", "volleyball"];
-var things = ["envelope", "eraser", "money", "refrigerator", "USB_drive", "watch"];
+var clubs = ["art", "baseball", "basketball", "band", "ping_pong", "volleyball"];
+var things = ["envelope", "eraser", "money", "fridge", "USB_drive", "watch"];
 
 var vocab = [];
 var wordcard = "nothing";
