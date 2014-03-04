@@ -1,35 +1,21 @@
-﻿#impressionscontainer {
-	background-color: #77C2CC;
-	padding: 50px 150px;
-	background-color: none;
-	text-align: center;
+﻿.main section.page3 {
+	background: SEAGREEN;
+	padding: 0% 24%;
 }
 
-#grass {
-	background-color: #879E3E;
-	height: 220px;
+#impressionscontainer {
+	padding: 5%;
+}
+
+#face, #gamearea, #clock_div {
+	display: inline-block;
+	float: left;
+	margin-top: 7%;
 }
 
 .face_pic img {
 	height: 128px;
 	width: 128px;
-}
-
-body {
-	font-weight: 200;
-	margin: 0 auto;
-	width: 100%;
-	clear: both;
-}
-
-#face, #gamearea, #clock_div {
-	display: inline-block;
-	background-color: none;
-	margin: 10px;
-}
-
-#rawtext {
-	color: white;
 }
 
 /* ====================
@@ -78,6 +64,7 @@ body {
 	width: 103px;
 	margin: 2px;
 	outline: none;
+	cursor: pointer;
 }
 
 #gamearea button:hover {

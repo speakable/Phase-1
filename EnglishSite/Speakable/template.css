@@ -26,10 +26,6 @@ a:hover {
 	color: goldenrod;
 }
 
-
-
-
-
 /*  ===================
        Images
  ====================== */
@@ -110,8 +106,4 @@ header {
 
 .main section.page2 {
 	background: hotpink;
-}
-
-.main section.page3 {
-	background: dodgerblue;
 }
