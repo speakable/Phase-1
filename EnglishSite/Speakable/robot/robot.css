@@ -1,64 +1,11 @@
-﻿#robotcontainer {
-	background-color: #77C2CC;
+﻿.page5 {
+	background: #77C2CC;
+}
+
+#robotcontainer {
 	height: 400px;
 	padding: 20px;
 	position: relative;
-	top: 50%;
-}
-
-#grass {
-	background-color: #879E3E;
-	height: 220px;
-}
-
-#mount1 {
-	position: absolute;
-	top:60%;
-	left:1%;
-}
-
-#mount2 {
-	position: absolute;
-	top:60%;
-	left:12%;
-}
-
-#mount3 {
-	position: absolute;
-	top:60%;
-	right:2%;
-}
-
-#mount4 {
-	position: absolute;
-	top:60%;
-	right:10%;
-}
-
-#cloudbig {
-	position: absolute;
-	top:37%;
-	right:13%;
-}
-
-#cloudbig2 {
-	position: absolute;
-	top:50%;
-	left:13.2%;
-}
-
-#tools td {
-	padding: 0px;
-	margin: 0px;
-	font-size: 29px;
-	cursor: pointer;
-}
-
-#robot td {
-	padding: 0px;
-	margin: 0px;
-	font-size: 29px;
-	cursor: pointer;
 }
 
 #toolsdiv {
@@ -81,6 +28,20 @@
 	position: absolute;
 	top: 35%;
 	right: 29%;
+}
+
+#tools td {
+	padding: 0;
+	margin: 0;
+	font-size: 29px;
+	cursor: pointer;
+}
+
+#robot td {
+	padding: 0;
+	margin: 0;
+	font-size: 29px;
+	cursor: pointer;
 }
 
 #dialog {

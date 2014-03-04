@@ -1,4 +1,35 @@
 /*  ======================
+     Page Elements
+ ====================== */
+
+header {
+	background: #6699FF;
+	position: relative;
+	padding: 10px;
+	z-index: 1;
+}
+
+.wrapper {
+	text-align: center;
+	height: 90%;
+}
+
+.custom_panel_1 {
+	background: #DDE9EF;
+	border-top-right-radius: 60px;
+	height: 550px;
+}
+
+.main section.page1 {
+	background: white;
+	padding: 15px;
+}
+
+.main section.page2 {
+	background: hotpink;
+}
+
+/*  ======================
   Navigation and Links
  ====================== */
 
@@ -75,35 +106,4 @@ a:hover {
 
 .next_button:hover {
 	opacity: 1;
-}
-
-/*  ======================
-     Page Elements
- ====================== */
-
-header {
-	background: #6699FF;
-	position: relative;
-	padding: 10px;
-	z-index: 1;
-}
-
-.wrapper {
-	text-align: center;
-	height: 90%;
-}
-
-.custom_panel_1 {
-	background: #DDE9EF;
-	border-top-right-radius: 60px;
-	height: 550px;
-}
-
-.main section.page1 {
-	background: white;
-	padding: 15px;
-}
-
-.main section.page2 {
-	background: hotpink;
 }
