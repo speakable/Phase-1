@@ -4,10 +4,11 @@
  ====================== */
 
 header {
-	background: #6699FF;
 	position: relative;
 	padding: 10px;
 	z-index: 1;
+	height: 55px;
+	background: white;
 }
 
 .wrapper {
@@ -64,9 +65,9 @@ a:hover {
 
 .nav_logo {
 	position: absolute;
-	top: 8px;
+	top: 7px;
 	left: 55px;
-	max-width: 75px;
+	max-width: 60px;
 	cursor: pointer;
 	z-index: 1;
 }
