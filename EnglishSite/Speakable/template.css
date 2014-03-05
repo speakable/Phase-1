@@ -6,6 +6,9 @@
 header {
 	position: relative;
 	z-index: 1;
+	padding: 2px;
+	height: 65px;
+	background: white;
 }
 
 .wrapper {
@@ -14,14 +17,12 @@ header {
 }
 
 .custom_panel_1 {
-	background: #DDE9EF;
-	border-top-right-radius: 60px;
-	height: 550px;
+	position: relative;
 }
 
 .main section.page1 {
 	background: white;
-	padding: 15px;
+	padding: 5px;
 }
 
 .main section.page2 {
@@ -60,49 +61,57 @@ a:hover {
        Images
  ====================== */
 
-.nav_logo {
+ #background1 {
+	width: 90%;
+	max-height: 560px;
+ }
+ 
+ #nav_logo {
 	position: absolute;
 	top: 6px;
 	left: 55px;
-	max-width: 60px;
+	max-width: 200px;
 	cursor: pointer;
 	z-index: 1;
 }
 
-.elliott_image {
+#elliott_image {
 	position: absolute;
-	top: 60px;
-	left: 50px;
+	top: 25%;
+	left: 25%;
+	width: 10%;
 }
 
-.speech_bubble {
+#speech_bubble {
 	position: absolute;
-	top: 50px;
-	left: 185px;
+	top: 20%;
+	left: 35%;
+	width: 18%;
 }
 
-.welcome_logo {
+#welcome_logo {
 	position: absolute;
-	top: 140px;
-	left: 180px;
+	top: 37%;
+	left: 38%;
+	width: 22%;
 }
 
-.large_logo {
+#large_logo {
 	position: absolute;
 	top: 4%;
 	right: 5%;
 	width: 65%;
 }
 
-.next_button {
+#next_button {
 	width: 55px;
 	cursor: pointer;
 	position: absolute;
-	bottom: 8%;
+	bottom: 2%;
 	right: 48%;
-	opacity: .5;
+	opacity: 1;
 }
 
-.next_button:hover {
+#next_button:hover {
 	opacity: 1;
 }

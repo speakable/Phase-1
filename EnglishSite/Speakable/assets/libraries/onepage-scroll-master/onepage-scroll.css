@@ -30,7 +30,7 @@ body, .onepage-wrapper, html {
 
 .onepage-pagination {
   position: absolute;
-  right: 10px;
+  left: 10px;
   top: 50%;
   z-index: 5;
   list-style: none;
@@ -62,8 +62,7 @@ body, .onepage-wrapper, html {
 .onepage-pagination li a.active:before{
   width: 10px;
   height: 10px;
-  background: none;
-  border: 1px solid black;
+  background: green;
   margin-top: -4px;
   left: 8px;
 }
