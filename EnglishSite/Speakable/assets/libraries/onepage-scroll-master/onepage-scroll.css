@@ -30,42 +30,44 @@ body, .onepage-wrapper, html {
 
 .onepage-pagination {
   position: absolute;
-  left: 10px;
-  top: 50%;
+  left: 3%;
+  top: 7%;
   z-index: 5;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 .onepage-pagination li {
-  padding: 0;
+  padding: 0 0 0 0;
   text-align: center;
 }
 .onepage-pagination li a{
-  padding: 10px;
-  width: 4px;
-  height: 4px;
+  padding-top: 75px;
+  width: 0px;
+  height: 0px;
   display: block;
   
 }
 .onepage-pagination li a:before{
   content: '';
   position: absolute;
-  width: 4px;
-  height: 4px;
-  background: rgba(0,0,0,0.85);
+  width: 10px;
+  height: 10px;
+  background: rgba(0,0,0,0.45);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
 }
 
 .onepage-pagination li a.active:before{
-  width: 10px;
-  height: 10px;
-  background: green;
+  width: 20px;
+  height: 20px;
+  background: rgba(117,193,95,1);
   margin-top: -4px;
-  left: 8px;
+  left: -5px;
 }
+
+// note: perhaps add new class here to notate inacessible nodes depending on the students progress
 
 .disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
   overflow: auto;
