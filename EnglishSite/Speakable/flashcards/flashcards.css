@@ -3,16 +3,11 @@
         Core Page Elements 
 	==================== */
 
-#flashcardcontainer {
-	padding: 0% 7%;
-	background: goldenrod;
-	height: 580px;
-}
-
 #flashcardarea {
 	background-color: white;
-	min-height: 300px;
-	padding: 70px 50px;
+	margin: 0% 7%;
+	min-height: 325px;
+	padding: 85px 55px;
 	text-align: center;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -23,9 +18,10 @@
 }
 
 #scoreCard {
-	min-height: 115px;
+	min-height: 175px;
 	padding: 1% 10%;
 	background: white;
+	margin: 0% 7%;
 }
 
 #score,

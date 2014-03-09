@@ -1,22 +1,13 @@
-
 /*  ======================
      Page Elements
  ====================== */
 
-header {
-	position: relative;
-	z-index: 1;
-	padding: 2px;
-	height: 65px;
-	background: none;
-}
-
 .wrapper {
 	text-align: center;
-	height: 90%;
+	height: 100%;
 }
 
-.custom_panel_1 {
+.profile_cointainer {
 	position: relative;
 	margin-left: 0%;
 	margin-top: 2%;
@@ -25,12 +16,28 @@ header {
 }
 
 .main section.page1 {
-	background: white;
-	padding: 5px;
 }
 
 .main section.page2 {
-	background: hotpink;
+}
+
+.main section.page3 {
+}
+
+.main section.page4 {
+}
+
+.main section.page5 {
+}
+
+.main section.page6 {
+}
+
+.main section.page7 {
+	background: goldenrod;
+}
+
+.main section.page8 {
 }
 
 /*  ======================
@@ -65,21 +72,20 @@ a:hover {
        Images
  ====================== */
 
- #background1 {
+ #nav_logo {
+	position: absolute;
+	top: 3%;
+	left: 1%;
+	cursor: pointer;
+	z-index: 1;
+}
+ 
+ .profile_background {
 	width: 93%;
 	max-height: 93%;
  }
  
- #nav_logo {
-	position: absolute;
-	top: 19px;
-	left: 17px;
-	max-width: 200px;
-	cursor: pointer;
-	z-index: 1;
-}
-
-#elliott_image {
+#profile_image {
 	position: absolute;
 	top: 25%;
 	left: 25%;
