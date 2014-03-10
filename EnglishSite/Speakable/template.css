@@ -1,7 +1,15 @@
 /*  ======================
-     Page Elements
+         Core Page Elements
  ====================== */
 
+#nav_logo {
+	position: absolute;
+	top: 3%;
+	left: 2%;
+	cursor: pointer;
+	width: 12%;
+	z-index: 1;
+} 
 .wrapper {
 	text-align: center;
 	height: 100%;
@@ -9,10 +17,25 @@
 
 .profile_cointainer {
 	position: relative;
-	margin-left: 0%;
-	margin-top: 2%;
-	margin-right: auto;
-	left: 1.5%;
+	padding: 6% 0% 4% 4%;
+}
+
+.profile_background {
+	width: 96%;
+	max-height: 84%;
+}
+
+.next_button {
+	width: 65px;
+	cursor: pointer;
+	position: absolute;
+	bottom: 8%;
+	right: 47%;
+	opacity: .8;
+}
+
+.next_button:hover {
+	opacity: 1;
 }
 
 .main section.page1 {
@@ -22,6 +45,7 @@
 }
 
 .main section.page3 {
+	padding: 5% 24%;
 }
 
 .main section.page4 {
@@ -34,15 +58,158 @@
 }
 
 .main section.page7 {
-	background: goldenrod;
 }
 
 .main section.page8 {
 }
 
-/*  ======================
-  Navigation and Links
+/*  ===================
+    Welcome Page Elements
  ====================== */
+  
+#welcome_pic {
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 12%;
+}
+
+#welcome_speech_bubble {
+	position: absolute;
+	top: 22%;
+	left: 38%;
+	width: 20%;
+}
+
+#welcome_logo {
+	position: absolute;
+	top: 38%;
+	left: 37%;
+	width: 27%;
+}
+
+/*  ===================
+    Zachs's Page Elements
+ ====================== */
+
+#zachs_pic {
+	position: absolute;
+	top: 26.5%;
+	left: 10%;
+	width: 12%;
+}
+
+#zachs_speech_bubble1 {
+	position: absolute;
+	top: 22%;
+	left: 23%;
+	width: 22%;
+}
+
+#zachs_speech_bubble2 {
+	position: absolute;
+	top: 40%;
+	left: 23%;
+	width: 20%;
+}
+
+#zachs_speech_bubble3 {
+	position: absolute;
+	bottom: 25%;
+	left: 22%;
+	width: 20%;
+}
+
+#zachs_instructions {
+	position: absolute;
+	top: 20%;
+	right: 14%;
+	width: 27%;
+}
+
+/*  ===================
+    Elliott's Page Elements
+ ====================== */
+
+#elliotts_pic {
+	position: absolute;
+	top: 25%;
+	left: 17%;
+	width: 12%;
+}
+
+#elliotts_speech_bubble1 {
+	position: absolute;
+	top: 22%;
+	left: 31%;
+	width: 22%;
+}
+
+#elliotts_speech_bubble2 {
+	position: absolute;
+	top: 43%;
+	left: 28%;
+	width: 20%;
+}
+
+#elliotts_speech_bubble3 {
+	position: absolute;
+	bottom: 30%;
+	left: 25%;
+	width: 20%;
+}
+
+#elliotts_instructions {
+	position: absolute;
+	top: 21%;
+	right: 14%;
+	width: 27%;
+}
+
+
+/*  ===================
+    Steven's Page Elements
+ ====================== */
+
+#stevens_pic {
+	position: absolute;
+	top: 23%;
+	right: 15%;
+	width: 12%;
+}
+
+#stevens_speech_bubble1 {
+	position: absolute;
+	top: 22%;
+	right: 29%;
+	width: 22%;
+}
+
+#stevens_speech_bubble2 {
+	position: absolute;
+	top: 43%;
+	right: 28%;
+	width: 20%;
+}
+
+#stevens_speech_bubble3 {
+	position: absolute;
+	bottom: 23%;
+	right: 14.5%;
+	width: 17%;
+}
+
+#stevens_instructions {
+	position: absolute;
+	top: 17.5%;
+	left: 14%;
+	width: 27%;
+}
+
+
+/*  ======================
+  Navigation and Links: Not in use now
+ ====================== 
 
 nav {
 	width: 250px;
@@ -68,60 +235,4 @@ a:hover {
 	color: goldenrod;
 }
 
-/*  ===================
-       Images
  ====================== */
-
- #nav_logo {
-	position: absolute;
-	top: 3%;
-	left: 1%;
-	cursor: pointer;
-	z-index: 1;
-}
- 
- .profile_background {
-	width: 93%;
-	max-height: 93%;
- }
- 
-#profile_image {
-	position: absolute;
-	top: 25%;
-	left: 25%;
-	width: 10%;
-}
-
-#speech_bubble {
-	position: absolute;
-	top: 20%;
-	left: 35%;
-	width: 18%;
-}
-
-#welcome_logo {
-	position: absolute;
-	top: 37%;
-	left: 38%;
-	width: 22%;
-}
-
-#large_logo {
-	position: absolute;
-	top: 4%;
-	right: 5%;
-	width: 65%;
-}
-
-#next_button {
-	width: 55px;
-	cursor: pointer;
-	position: absolute;
-	bottom: 2%;
-	right: 48%;
-	opacity: .8;
-}
-
-#next_button:hover {
-	opacity: 1;
-}

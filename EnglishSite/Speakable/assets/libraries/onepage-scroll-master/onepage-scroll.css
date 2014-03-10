@@ -30,8 +30,8 @@ body, .onepage-wrapper, html {
 
 .onepage-pagination {
   position: absolute;
-  left: 3%;
-  top: 7%;
+  left: 3.5%;
+  top: 5%;
   z-index: 5;
   list-style: none;
   margin: 0;
@@ -42,7 +42,7 @@ body, .onepage-wrapper, html {
   text-align: center;
 }
 .onepage-pagination li a{
-  padding-top: 75px;
+  padding-top: 70px;
   width: 0px;
   height: 0px;
   display: block;
@@ -67,7 +67,7 @@ body, .onepage-wrapper, html {
   left: -5px;
 }
 
-// note: perhaps add new class here to notate inacessible nodes depending on the students progress
+// note: perhaps add new class here to notate inacessible nodes depending on student progress
 
 .disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
   overflow: auto;

@@ -1,8 +1,6 @@
-﻿
-.main section.page3 {
-	background: SEAGREEN;
-	padding: 0% 24%;
-}
+﻿/* ====================
+       Core Page Elements
+ ==================== */
 
 #impressionscontainer {
 	padding: 5%;
@@ -20,7 +18,7 @@
 }
 
 /* ====================
- Clock
+        Clock
  ==================== */
 
 #clock {
