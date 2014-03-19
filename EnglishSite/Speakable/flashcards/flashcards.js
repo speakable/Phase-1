@@ -131,7 +131,7 @@ function flashclock() {
 		if (flashtime == 0) {
 			clearInterval(timerid);
 			$("#flashcardscontainer").empty();
-			$("#flashcardscontainer").append("<div id='flashcardsfinish'><p>Well done! Your score was " + score + "!");
+			$("#flashcardscontainer").append("<div id='flashcardsfinish' class='finishprompt'><p>Well done! Your score was " + score + "!");
 			$("#flashcardscontainer").append("<button onClick='startflashcards()'>Retry!</button></div>");
 		}
 	}, 1000);

@@ -6,57 +6,32 @@ var finishedids = new Array();
 var rtime = 0;
 var selectedrobotid = 0;
 var selectedtoolid = 0;
+var rtimerid = 0;
 
 function startrobot() {
-	$("table#robot td").click(function() {
-		var id = getId($(this).attr('id'));
 
-		if ($.inArray(robotwords[id - 1], finishedids) != -1) {
-			return;
-		}
+	robotwords = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+	toolwords = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+	finishedids = new Array();
+	rtime = 0;
+	selectedrobotid = 0;
+	selectedtoolid = 0;
+	rtimerid = 0;
 
-		$("#r" + selectedrobotid).css("background", "none");
-		$(this).css("background", "red");
-		if (id != selectedrobotid) {
-			var mySound = new buzz.sound("robot/cartoon/" + robotwords[id - 1], {
-				formats : ["mp3"]
-			});
-			mySound.play();
-			selectedrobotid = id;
-			checkPair();
-		} else {
-			$(this).css("background", "none");
-			selectedrobotid = 0;
-		}
-	});
-
-	$("table#tools td").click(function() {
-		var id = getId($(this).attr('id'));
-
-		if ($.inArray(toolwords[id - 1], finishedids) != -1) {
-			return;
-		}
-
-		$("#t" + selectedtoolid).css("background", "none");
-		$(this).css("background", "blue");
-
-		if (id != selectedtoolid) {
-			var mySound = new buzz.sound("robot/cartoon/" + toolwords[id - 1], {
-				formats : ["mp3"]
-			});
-			mySound.play();
-			selectedtoolid = id;
-			checkPair();
-		} else {
-			$(this).css("background", "none");
-			selectedtoolid = 0;
-		}
-	});
+	$("#robotcontainer").empty();
+	$("#robotcontainer").load("robot/robot.html");
 
 	robotwords = shuffleArray(robotwords);
 	toolwords = shuffleArray(toolwords);
 
 	clock();
+}
+
+function robotFinished() {
+	clearInterval(rtimerid);
+	$("#robotcontainer").empty();
+	$("#robotcontainer").append("<div id='robotfinish' class='finishprompt'><p>Well done! Your time was " + rtime / 1000 + " seconds!");
+	$("#robotcontainer").append("<button onClick='startrobot()'>Retry!</button></div>");
 }
 
 function checkPair() {
@@ -104,7 +79,7 @@ function shuffleArray(array) {
 
 function clock() {
 
-	setInterval(function() {
+	rtimerid = setInterval(function() {
 		var seconds = new Date(rtime).getSeconds();
 		var sdegree = seconds * 6;
 		var srotate = "rotate(" + sdegree + "deg)";
