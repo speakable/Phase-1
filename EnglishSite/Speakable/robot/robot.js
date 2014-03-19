@@ -1,7 +1,7 @@
 //http://buzz.jaysalvat.com/
 
-var robotwords = ['a', 'b', 'c', 'd', 'e', 'f'];
-var toolwords = ['a', 'b', 'c', 'd', 'e', 'f'];
+var robotwords = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+var toolwords = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
 var finishedids = new Array();
 var time = 0;
 var selectedrobotid = 0;
@@ -63,7 +63,7 @@ function checkPair() {
 	if (robotwords[selectedrobotid - 1] == toolwords[selectedtoolid - 1]) {
 		$("#r" + selectedrobotid).css("background", "none");
 		$("#rb" + selectedrobotid).attr({
-			src : "robot/images/man/m" + selectedrobotid + ".png"
+			src : "robot/images/wholebody/robot_body_outlined_0" + selectedrobotid + ".png"
 		});
 		$("#t" + selectedtoolid).css("background", "none");
 		$("#t" + selectedtoolid).html("");
@@ -79,7 +79,12 @@ function checkPair() {
 }
 
 function getId(code) {
-	return code[1];
+	if (code.length == 2) {
+		return code[1];
+	} else {
+		return code[1] + code[2];
+	}
+
 }
 
 /**
