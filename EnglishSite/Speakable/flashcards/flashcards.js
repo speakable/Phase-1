@@ -14,6 +14,19 @@ var folder = "500px72dpi/";
 
 function startflashcards() {
 
+	vocab = [];
+	wordcard = "nothing";
+	piccard = "nothing";
+	score = 0;
+	flashtime = 60; 
+	wordsremaining;
+	stop = false;
+	currentDeck = "things";
+
+	$("#flashcardscontainer").empty();
+	$("#flashcardscontainer").append("<div id='flashcardarea'></div>");
+	$("#flashcardscontainer").append("<div id='scoreCard'><p id='score'>0</p><p id='time'>60</p></div>");
+
 	createFlashcards();
 	flashclock();
 }
@@ -117,8 +130,9 @@ function flashclock() {
 		$("#time").text(--flashtime);
 		if (flashtime == 0) {
 			clearInterval(timerid);
-			$("#time").text("Time is up!");
-			stop = true;
+			$("#flashcardscontainer").empty();
+			$("#flashcardscontainer").append("<div id='flashcardsfinish'><p>Well done! Your score was " + score + "!");
+			$("#flashcardscontainer").append("<button onClick='startflashcards()'>Retry!</button></div>");
 		}
 	}, 1000);
 }

@@ -94,8 +94,10 @@
 				<section class="page3">
 					<div class="page_container">
 						<div id="impressionscontainer">
-							<div id="impressionsstart">
-							<button onclick="startimpressions()">Go!</button>
+							<div id="impressionsstart" class="startprompt">
+								<button onclick="startimpressions()">
+									Go!
+								</button>
 							</div>
 						</div>
 					</div>
@@ -238,24 +240,11 @@
 
 				<section class="page7">
 					<div class="page_container">
-
-						<div id="flashcardarea"></div>
-
-						<div id="scoreCard">
-							<p id="score">
-								0
-							</p>
-							<p id="time">
-								60
-							</p>
+						<div id="flashcardscontainer">
+							<div id="flashcardsstart" class="startprompt">
+							<button onclick="startflashcards()">Go!</button>
+							</div>			
 						</div>
-
-						<script>
-							$(document).ready(function() {
-								startflashcards();
-							});
-						</script>
-
 					</div>
 				</section>
 
