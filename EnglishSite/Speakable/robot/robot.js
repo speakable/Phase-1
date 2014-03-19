@@ -63,7 +63,7 @@ function checkPair() {
 	if (robotwords[selectedrobotid - 1] == toolwords[selectedtoolid - 1]) {
 		$("#r" + selectedrobotid).css("background", "none");
 		$("#rb" + selectedrobotid).attr({
-			src : "robot/images/wholebody/robot_body_outlined_0" + selectedrobotid + ".png"
+			src : "robot/images/wholebody/" + selectedrobotid + ".png"
 		});
 		$("#t" + selectedtoolid).css("background", "none");
 		$("#t" + selectedtoolid).html("");
