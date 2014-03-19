@@ -2,9 +2,19 @@ var choices = ["Bowling", "Butterfly", "XBox", "Donut", "Fire", "Snowman", "Guit
 var lastid = 1;
 var time = 0;
 var correctanswers = 0;
+var itimerid = 0;
 
 function startimpressions() {
-	clock();
+	time = 0;
+	lastid = 1;
+	correctanswers = 0;
+	
+	$("#impressionscontainer").empty();
+	$("#impressionscontainer").append("<div id='face'><div class='face_pic' id='facediv'></div></div>");
+	$("#impressionscontainer").append("<div id='gamearea'></div>");
+	$("#impressionscontainer").append("<div id='clock_div'><ul id='clock'><li id='isec'></li><li id='hour'></li><li id='min'></li></ul></div>");
+
+	impressionsclock();
 	$("#facediv").append("<img src='impressions/img/heads/h1.png' id = 'facei'>");
 	$("#gamearea").append("<img src='impressions/img/1.png' id = 'icon'>");
 	$("#gamearea").append("<br>");
@@ -40,8 +50,10 @@ function checkAnswer(btnid) {
 }
 
 function gamefinished() {
-	//$("#dialog").html("Nice one! It took you " + time / 1000 + " seconds to finish.<br><br>Why not play again and try beat your score?");
-	//$("#dialog").dialog("open");
+	clearInterval(itimerid);
+	$("#impressionscontainer").empty();
+	$("#impressionscontainer").append("<div id='impressionsfinish'><p>Well done! Your time was " + time / 1000 + " seconds!");
+	$("#impressionscontainer").append("<button onClick='startimpressions()'>Retry!</button></div>");
 }
 
 function grabImage() {
@@ -79,13 +91,13 @@ function getNum(lastNum, limit) {
 	return num;
 }
 
-function clock() {
-	setInterval(function() {
+function impressionsclock() {
+	 itimerid = setInterval(function() {
 		var seconds = new Date(time).getSeconds();
 		var sdegree = seconds * 6;
 		var srotate = "rotate(" + sdegree + "deg)";
 
-		$("#sec").css({
+		$("#isec").css({
 			"transform" : srotate
 		});
 

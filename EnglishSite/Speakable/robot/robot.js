@@ -3,7 +3,7 @@
 var robotwords = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
 var toolwords = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
 var finishedids = new Array();
-var time = 0;
+var rtime = 0;
 var selectedrobotid = 0;
 var selectedtoolid = 0;
 
@@ -105,7 +105,7 @@ function shuffleArray(array) {
 function clock() {
 
 	setInterval(function() {
-		var seconds = new Date(time).getSeconds();
+		var seconds = new Date(rtime).getSeconds();
 		var sdegree = seconds * 6;
 		var srotate = "rotate(" + sdegree + "deg)";
 
@@ -113,6 +113,6 @@ function clock() {
 			"transform" : srotate
 		});
 
-		time = time + 1000;
+		rtime = rtime + 1000;
 	}, 1000);
 }
