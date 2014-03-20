@@ -78,16 +78,15 @@ function shuffleArray(array) {
 }
 
 function clock() {
-
 	rtimerid = setInterval(function() {
-		var seconds = new Date(rtime).getSeconds();
-		var sdegree = seconds * 6;
-		var srotate = "rotate(" + sdegree + "deg)";
+		rtime = rtime + 9;
+		var millisec = pad(new Date(rtime).getMilliseconds());
+		var seconds = pad(new Date(rtime).getSeconds());
+		var minutes = pad(new Date(rtime).getMinutes());
+		$("#robottime").html(minutes + ":" + seconds + ":" + millisec);
+	}, 9);
+}
 
-		$("#sec").css({
-			"transform" : srotate
-		});
-
-		rtime = rtime + 1000;
-	}, 1000);
+function pad(number) {
+     return (number < 10 ? '0' : '') + number;
 }

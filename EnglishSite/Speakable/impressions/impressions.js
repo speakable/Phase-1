@@ -12,7 +12,7 @@ function startimpressions() {
 	$("#impressionscontainer").empty();
 	$("#impressionscontainer").append("<div id='face'><div class='face_pic' id='facediv'></div></div>");
 	$("#impressionscontainer").append("<div id='gamearea'></div>");
-	$("#impressionscontainer").append("<div id='clock_div'><ul id='clock'><li id='isec'></li><li id='hour'></li><li id='min'></li></ul></div>");
+	$("#impressionscontainer").append("<div id='clock_div'><p id='impressiontime'>00:00:0000</div>");
 
 	impressionsclock();
 	$("#facediv").append("<img src='impressions/img/heads/h1.png' id = 'facei'>");
@@ -93,14 +93,10 @@ function getNum(lastNum, limit) {
 
 function impressionsclock() {
 	 itimerid = setInterval(function() {
-		var seconds = new Date(time).getSeconds();
-		var sdegree = seconds * 6;
-		var srotate = "rotate(" + sdegree + "deg)";
-
-		$("#isec").css({
-			"transform" : srotate
-		});
-
-		time = time + 1000;
-	}, 1000);
+	 	time = time + 9;
+	 	var millisec = pad(new Date(time).getMilliseconds());
+		var seconds = pad(new Date(time).getSeconds());
+		var minutes = pad(new Date(time).getMinutes());
+		$("#impressiontime").html(minutes + ":" + seconds + ":" + millisec);
+	}, 9);
 }

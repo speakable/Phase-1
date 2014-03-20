@@ -74,12 +74,9 @@
 	</table>
 </div>
 
-<div id="clockdiv">
-	<ul id="clock">
-		<li id="sec"></li>
-		<li id="hour"></li>
-		<li id="min"></li>
-	</ul>
+<div id='clock_div'>
+	<p id='robottime'>
+		00:00:0000
 </div>
 
 <script>
@@ -130,7 +127,7 @@
 			$(this).css("background", "none");
 			selectedtoolid = 0;
 		}
-		
+
 		if (finishedids.length == robotwords.length) {
 			robotFinished();
 		}

@@ -47,29 +47,3 @@
 #dialog {
 	display: none;
 }
-
-/* ====================
- Clock
- ==================== */
-
-#clock {
-	width: 120px;/*600*/
-	height: 120px;/*600*/
-	background: url(images/clockface.png);
-	list-style: none;
-	background-repeat: no-repeat;
-}
-
-#sec {
-	position: absolute;
-	width: 6px;/*30*/
-	height: 120px;/*600*/
-	top: 0px;
-	left: 57px;/*285*/
-}
-
-#sec {
-	background: url(images/sechand.png);
-	z-index: 3;
-	background-repeat: no-repeat;
-}
