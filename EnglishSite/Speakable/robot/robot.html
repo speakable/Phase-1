@@ -90,10 +90,7 @@
 		$("#r" + selectedrobotid).css("background", "none");
 		$(this).css("background", "red");
 		if (id != selectedrobotid) {
-			var mySound = new buzz.sound("robot/cartoon/" + robotwords[id - 1], {
-				formats : ["mp3"]
-			});
-			mySound.play();
+			var sound = robotsounds[id-1].play();
 			selectedrobotid = id;
 			checkPair();
 		} else {
@@ -117,10 +114,7 @@
 		$(this).css("background", "blue");
 
 		if (id != selectedtoolid) {
-			var mySound = new buzz.sound("robot/cartoon/" + toolwords[id - 1], {
-				formats : ["mp3"]
-			});
-			mySound.play();
+			robotsounds[id-1].play();
 			selectedtoolid = id;
 			checkPair();
 		} else {

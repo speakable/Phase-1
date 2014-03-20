@@ -2,6 +2,7 @@
 
 var robotwords = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
 var toolwords = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+var robotsounds = new Array();
 var finishedids = new Array();
 var rtime = 0;
 var selectedrobotid = 0;
@@ -9,6 +10,14 @@ var selectedtoolid = 0;
 var rtimerid = 0;
 
 function startrobot() {
+
+	for ( i = 0; i < robotwords.length; i++) {
+		var mySound = new buzz.sound("robot/cartoon/" + robotwords[i], {
+			formats : ["mp3"], preload : true
+		});
+		robotsounds.push(mySound);
+	}
+
 	var imagesrcs = [];
 	for ( i = 1; i < 11; i++) {
 		imagesrcs.push("robot/images/outlinedbody/" + i + ".png");
@@ -23,7 +32,6 @@ function startrobot() {
 	imagesrcs.push("robot/images/outlinedbody/robot_body_outlined_17.png");
 	imagesrcs.push("robot/images/outlinedbody/spacer.gif");
 	imagesrcs.push("robot/images/wrench.png");
-
 
 	loadImages(imagesrcs, robotReady);
 }
