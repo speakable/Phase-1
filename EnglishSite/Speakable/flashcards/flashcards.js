@@ -13,7 +13,22 @@ var currentDeck = "things";
 var folder = "500px72dpi/";
 
 function startflashcards() {
+	var imagesrcs = [];
+	for ( i = 0; i <= fruit.length; i++) {
+		imagesrcs.push("flashcards/img/500px72dpi/fruit/" + fruit[i] + ".png");
+	}
+	for ( i = 0; i <= clubs.length; i++) {
+		imagesrcs.push("flashcards/img/500px72dpi/clubs/" + clubs[i] + ".png");
+	}
+	for ( i = 0; i <= things.length; i++) {
+		imagesrcs.push("flashcards/img/500px72dpi/things/" + things[i] + ".png");
+	}
 
+	loadImages(imagesrcs, flashcardsReady());
+}
+
+function flashcardsReady()
+{
 	vocab = [];
 	wordcard = "nothing";
 	piccard = "nothing";
