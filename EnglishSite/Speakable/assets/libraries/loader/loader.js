@@ -2,6 +2,8 @@ var loadedimages = 0;
 var images = [];
 
 function loadImages(imagesrcs, onload) {
+	loadedimages = 0;
+	images = [];
 	for ( i = 0; i < imagesrcs.length; i++) {
 		var image = new Image();
 		image.onload = imgLoaded(onload, imagesrcs.length);
@@ -13,5 +15,5 @@ function loadImages(imagesrcs, onload) {
 function imgLoaded(onload, imagestoload) {
 	++loadedimages;
 	if (loadedimages == imagestoload)
-		onload;
+		onload();
 }

@@ -11,10 +11,10 @@ function startimpressions() {
 		imagesrcs.push("impressions/img/" + i + ".png");
 	}
 	for ( i = 1; i < 11; i++) {
-		imagesrcs.push("impressions/img/heads" + i + ".png");
+		imagesrcs.push("impressions/img/heads/h" + i + ".png");
 	}
 
-	loadImages(imagesrcs, impressionsReady());
+	loadImages(imagesrcs, impressionsReady);
 }
 
 function impressionsReady() {
@@ -67,7 +67,7 @@ function gamefinished() {
 	clearInterval(itimerid);
 	$("#impressionscontainer").empty();
 	$("#impressionscontainer").append("<div id='impressionsfinish' class='finishprompt'><p>Well done! Your time was " + time / 1000 + " seconds!");
-	$("#impressionscontainer").append("<button onClick='ready()'>Retry!</button></div>");
+	$("#impressionscontainer").append("<button onClick='impressionsReady()'>Retry!</button></div>");
 }
 
 function grabImage() {

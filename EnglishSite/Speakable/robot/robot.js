@@ -9,7 +9,26 @@ var selectedtoolid = 0;
 var rtimerid = 0;
 
 function startrobot() {
+	var imagesrcs = [];
+	for ( i = 1; i < 11; i++) {
+		imagesrcs.push("robot/images/outlinedbody/" + i + ".png");
+		imagesrcs.push("robot/images/wholebody/" + i + ".png");
+	}
+	imagesrcs.push("robot/images/outlinedbody/robot_body_outlined_01.png");
+	imagesrcs.push("robot/images/outlinedbody/robot_body_outlined_03.png");
+	imagesrcs.push("robot/images/outlinedbody/robot_body_outlined_10.png");
+	imagesrcs.push("robot/images/outlinedbody/robot_body_outlined_12.png");
+	imagesrcs.push("robot/images/outlinedbody/robot_body_outlined_13.png");
+	imagesrcs.push("robot/images/outlinedbody/robot_body_outlined_14.png");
+	imagesrcs.push("robot/images/outlinedbody/robot_body_outlined_17.png");
+	imagesrcs.push("robot/images/outlinedbody/spacer.gif");
+	imagesrcs.push("robot/images/wrench.png");
 
+
+	loadImages(imagesrcs, robotReady);
+}
+
+function robotReady() {
 	robotwords = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
 	toolwords = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
 	finishedids = new Array();
@@ -88,5 +107,5 @@ function clock() {
 }
 
 function pad(number) {
-     return (number < 10 ? '0' : '') + number;
+	return (number < 10 ? '0' : '') + number;
 }
