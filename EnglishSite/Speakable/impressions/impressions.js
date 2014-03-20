@@ -1,14 +1,28 @@
 var choices = ["Bowling", "Butterfly", "XBox", "Donut", "Fire", "Snowman", "Guitar", "iPad", "Pizza", "Plant", "Polar Bear", "Soccer Ball"];
+
 var lastid = 1;
 var time = 0;
 var correctanswers = 0;
 var itimerid = 0;
 
 function startimpressions() {
+	var imagesrcs = [];
+	for ( i = 1; i <= choices.length; i++) {
+		imagesrcs.push("impressions/img/" + i + ".png");
+	}
+	for ( i = 1; i < 11; i++) {
+		imagesrcs.push("impressions/img/heads" + i + ".png");
+	}
+
+	loadImages(imagesrcs, impressionsReady());
+}
+
+function impressionsReady() {
 	time = 0;
 	lastid = 1;
 	correctanswers = 0;
-	
+	itimerid = 0;
+
 	$("#impressionscontainer").empty();
 	$("#impressionscontainer").append("<div id='face'><div class='face_pic' id='facediv'></div></div>");
 	$("#impressionscontainer").append("<div id='gamearea'></div>");
@@ -16,7 +30,7 @@ function startimpressions() {
 
 	impressionsclock();
 	$("#facediv").append("<img src='impressions/img/heads/h1.png' id = 'facei'>");
-	$("#gamearea").append("<img src='impressions/img/1.png' id = 'icon'>");
+	$("#gamearea").append("<img id='icon' src='impressions/img/1.png'>");
 	$("#gamearea").append("<br>");
 	$("#gamearea").append("<button type='button' onClick = 'buttonClicked(1)' id = 'c1Btn'>Bowling</button>");
 	$("#gamearea").append("<button type='button' onClick = 'buttonClicked(2)' id = 'c2Btn'>Butterfly</button>");
@@ -53,7 +67,7 @@ function gamefinished() {
 	clearInterval(itimerid);
 	$("#impressionscontainer").empty();
 	$("#impressionscontainer").append("<div id='impressionsfinish' class='finishprompt'><p>Well done! Your time was " + time / 1000 + " seconds!");
-	$("#impressionscontainer").append("<button onClick='startimpressions()'>Retry!</button></div>");
+	$("#impressionscontainer").append("<button onClick='ready()'>Retry!</button></div>");
 }
 
 function grabImage() {
@@ -92,9 +106,9 @@ function getNum(lastNum, limit) {
 }
 
 function impressionsclock() {
-	 itimerid = setInterval(function() {
-	 	time = time + 9;
-	 	var millisec = pad(new Date(time).getMilliseconds());
+	itimerid = setInterval(function() {
+		time = time + 9;
+		var millisec = pad(new Date(time).getMilliseconds());
 		var seconds = pad(new Date(time).getSeconds());
 		var minutes = pad(new Date(time).getMinutes());
 		$("#impressiontime").html(minutes + ":" + seconds + ":" + millisec);
