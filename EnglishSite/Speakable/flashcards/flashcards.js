@@ -12,7 +12,24 @@ var stop = false;
 var currentDeck = "things";
 var folder = "500px72dpi/";
 
+var correctsound;
+var wrongsound;
+var selectsound;
+
 function startflashcards() {
+	correctsound = new buzz.sound("flashcards/sounds/coin", {
+		formats : ["mp3"],
+		preload : true
+	});
+	wrongsound = new buzz.sound("flashcards/sounds/noMatchSound", {
+		formats : ["mp3"],
+		preload : true
+	});
+	selectsound = new buzz.sound("flashcards/sounds/clickSound", {
+		formats : ["mp3"],
+		preload : true
+	});
+
 	var imagesrcs = [];
 	for ( i = 0; i < fruit.length; i++) {
 		imagesrcs.push("flashcards/img/500px72dpi/fruit/" + fruit[i] + ".png");
@@ -27,13 +44,12 @@ function startflashcards() {
 	loadImages(imagesrcs, flashcardsReady);
 }
 
-function flashcardsReady()
-{
+function flashcardsReady() {
 	vocab = [];
 	wordcard = "nothing";
 	piccard = "nothing";
 	score = 0;
-	flashtime = 60; 
+	flashtime = 60;
 	wordsremaining;
 	stop = false;
 	currentDeck = "things";
@@ -86,10 +102,7 @@ function createFlashcards() {
 		}
 
 		if (wordcard == piccard) {
-			var mySound = new buzz.sound("flashcards/sounds/coin", {
-				formats : ["mp3"]
-			});
-			mySound.play();
+			correctsound.load().play();
 
 			$("#" + wordcard).remove();
 			$("#" + piccard).remove();
@@ -100,15 +113,9 @@ function createFlashcards() {
 			piccard = "nothing";
 			wordsremaining--;
 		} else if (wordcard == "nothing" || piccard == "nothing") {
-			var mySound = new buzz.sound("flashcards/sounds/clickSound", {
-				formats : ["mp3"]
-			});
-			mySound.play();
+			selectsound.load().play();
 		} else {
-			var mySound = new buzz.sound("flashcards/sounds/noMatchSound", {
-				formats : ["mp3"]
-			});
-			mySound.play();
+			wrongsound.load().play();
 
 			wordcard = "nothing";
 			piccard = "nothing";
