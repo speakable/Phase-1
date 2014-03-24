@@ -56,9 +56,7 @@ function robotReady() {
 
 function robotFinished() {
 	clearInterval(rtimerid);
-	$("#robotcontainer").empty();
-	$("#robotcontainer").append("<div id='robotfinish' class='finishprompt'><p>Well done! Your time was " + rtime / 1000 + " seconds!");
-	$("#robotcontainer").append("<button onClick='startrobot()'>Retry!</button></div>");
+	displayFinish("#robotcontainer", rtime / 1000, "startrobot");
 }
 
 function checkPair() {

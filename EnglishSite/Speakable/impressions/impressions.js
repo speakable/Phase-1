@@ -65,9 +65,7 @@ function checkAnswer(btnid) {
 
 function gamefinished() {
 	clearInterval(itimerid);
-	$("#impressionscontainer").empty();
-	$("#impressionscontainer").append("<div id='impressionsfinish' class='finishprompt'><p>Well done! Your time was " + time / 1000 + " seconds!");
-	$("#impressionscontainer").append("<button onClick='impressionsReady()'>Retry!</button></div>");
+	displayFinish("#impressionscontainer", time/1000, "impressionsReady");
 }
 
 function grabImage() {

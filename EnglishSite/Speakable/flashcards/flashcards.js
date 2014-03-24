@@ -152,9 +152,7 @@ function flashclock() {
 		$("#time").text(--flashtime);
 		if (flashtime == 0) {
 			clearInterval(timerid);
-			$("#flashcardscontainer").empty();
-			$("#flashcardscontainer").append("<div id='flashcardsfinish' class='finishprompt'><p>Well done! Your score was " + score + "!");
-			$("#flashcardscontainer").append("<button onClick='startflashcards()'>Retry!</button></div>");
+			displayFinish("#flashcardscontainer", score, "startflashcards");
 		}
 	}, 1000);
 }
