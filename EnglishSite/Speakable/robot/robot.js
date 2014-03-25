@@ -31,8 +31,11 @@ function startrobot() {
 	imagesrcs.push("robot/images/outlinedbody/robot_body_outlined_14.png");
 	imagesrcs.push("robot/images/outlinedbody/robot_body_outlined_17.png");
 	imagesrcs.push("robot/images/outlinedbody/spacer.gif");
-	imagesrcs.push("robot/images/wrench.png");
-
+	imagesrcs.push("robot/images/blueprints/1.png");
+	imagesrcs.push("robot/images/blueprints/2.png");
+	imagesrcs.push("robot/images/blueprints/3.png");
+	imagesrcs.push("robot/images/blueprints/4.png");
+	imagesrcs.push("robot/images/blueprints/5.png");
 	loadImages(imagesrcs, robotReady);
 }
 

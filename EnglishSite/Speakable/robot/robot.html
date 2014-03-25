@@ -90,7 +90,8 @@
 		$("#r" + selectedrobotid).css("background", "none");
 		$(this).css("background", "red");
 		if (id != selectedrobotid) {
-			robotsounds[id-1].load().play();
+			var letter = robotwords[id-1].charCodeAt(0) - 97;
+			robotsounds[letter].load().play();
 			selectedrobotid = id;
 			checkPair();
 		} else {
@@ -114,7 +115,8 @@
 		$(this).css("background", "blue");
 
 		if (id != selectedtoolid) {
-			robotsounds[id-1].load().play();
+			var letter = toolwords[id-1].charCodeAt(0) - 97;
+			robotsounds[letter].load().play();
 			selectedtoolid = id;
 			checkPair();
 		} else {
