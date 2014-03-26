@@ -25,10 +25,15 @@
 	max-height: 84%;
 }
 
+.play_button {
+	cursor: pointer;
+	margin-right: 40px;
+}
+
 .startprompt {
-	padding-top: 250px;
-	height: 800px;
-	width: 1200px;
+	padding: 8% 9%;
+	height: 400px;
+	width: 1035px;
 }
 
 .next_button {
@@ -38,6 +43,7 @@
 	bottom: 8%;
 	right: 47%;
 	opacity: .8;
+	z-index: 10
 }
 
 .next_button:hover {

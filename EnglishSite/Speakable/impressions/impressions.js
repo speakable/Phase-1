@@ -29,7 +29,7 @@ function impressionsReady() {
 	impressionsclock();
 	$("#facediv").append("<img src='impressions/img/wrong_face.png' id = 'facei'>");
 	$("#gamearea").append("<img id='icon' src='impressions/img/1.png'>");
-	$("#gamearea").append("<br>");
+	$("#gamearea").append("<br><br><br><br><br><br>");
 	$("#gamearea").append("<button type='button' onClick = 'buttonClicked(1)' id = 'c1Btn'>Bowling</button>");
 	$("#gamearea").append("<button type='button' onClick = 'buttonClicked(2)' id = 'c2Btn'>Butterfly</button>");
 	$("#gamearea").append("<button type='button' onClick = 'buttonClicked(3)' id = 'c3Btn'>XBox</button>");

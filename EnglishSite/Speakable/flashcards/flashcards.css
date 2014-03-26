@@ -5,10 +5,10 @@
 	
 #flashcardscontainer {
 	position: absolute;
-	top: 6%;
-	left: 7%;
+	top: 10%;
+	left: 8%;
 }
-	
+
 #flashcardarea {
 	margin: 1% 2%;
 	min-height: 325px;
@@ -23,9 +23,10 @@
 }
 
 #scoreCard {
-	min-height: 175px;
-	padding: 1% 10%;
-	margin: 0% 7%;
+	position: absolute;
+	top: 3%;
+	right: 47%;
+	width: 150px;
 }
 
 #score,

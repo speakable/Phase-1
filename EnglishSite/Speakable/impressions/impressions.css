@@ -7,37 +7,50 @@
 	position: absolute;
 	top: 6%;
 	left: 7%;
+	height: 600px;
 }
 
-#face, #gamearea, #clock_div {
-	display: inline-block;
-	float: left;
-	margin-top: 7%;
+
+#face {
+	position: absolute;
+	top: 20%;
+	left: 2.1%;
+}
+
+#gamearea {
+	position: absolute;
+	top: 32%;
+	left: 32%;
+	height: 300px;
+	width: 400px;
+	
+}
+
+#clock_div {
+	position: absolute;
+	top: 8%;
+	right: 17%;
+    color: #8ee557;
+	width: 150px;
+	font-size: 2em;
 }
 
 .face_pic img {
-	height: 128px;
-	width: 128px;
+	width: 70%;
 }
 
 #gamearea button {
-	background: #FFF;
-	border-radius: 15px;
-	-moz-border-radius: 15px;
-	-webkit-border-radius: 15px;
-	border-left: 1px solid #E8E8E8;
-	color: #1D1D1D;
-	font-size: 14px;
-	font-weight: 200px;
-	padding: 5px 0;
+	background: none;
+	border: none;
+	color: white;
+	padding: 5%;
+	font-size: 20px;
+	font-weight: 100;
 	text-align: center;
 	text-decoration: none;
-	width: 103px;
-	margin: 2px;
 	outline: none;
 	cursor: pointer;
 }
 
 #gamearea button:hover {
-	background-color: #FFD640;
 }
