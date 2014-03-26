@@ -1,7 +1,7 @@
 var choices = ["Bowling", "Butterfly", "XBox", "Donut", "Fire", "Snowman", "Guitar", "iPad", "Pizza", "Plant", "Polar Bear", "Soccer Ball"];
 
 var lastid = 1;
-var time = 0;
+var time = 60000;
 var correctanswers = 0;
 var itimerid = 0;
 
@@ -16,7 +16,7 @@ function startimpressions() {
 }
 
 function impressionsReady() {
-	time = 0;
+	time = 60000;
 	lastid = 1;
 	correctanswers = 0;
 	itimerid = 0;
@@ -51,19 +51,24 @@ function checkAnswer(btnid) {
 		$("#facei").attr("src", "impressions/img/right_face.png");
 	} else {
 		$("#facei").attr("src", "impressions/img/wrong_face.png");
-		if (correctanswers != 0) {
-			correctanswers--;
-		}
+		// if (correctanswers != 0) {
+		// correctanswers--;
+		// }
 	}
 
 	if (correctanswers == 9) {
-		gamefinished();
+		gamefinished(true);
 	}
 }
 
-function gamefinished() {
+function gamefinished(completed) {
 	clearInterval(itimerid);
-	displayFinish("#impressionscontainer", time/1000, "impressionsReady");
+	if (completed) {
+		displayFinish("#impressionscontainer", (60000-time)/1000, "impressionsReady");
+	} else {
+		displayFinish("#impressionscontainer", "FAILED", "impressionsReady");
+	}
+
 }
 
 function grabImage() {
@@ -103,10 +108,12 @@ function getNum(lastNum, limit) {
 
 function impressionsclock() {
 	itimerid = setInterval(function() {
-		time = time + 9;
+		time = time - 9;
+		if (time < 0) {
+			gamefinished(false);
+		}
 		var millisec = pad(new Date(time).getMilliseconds());
 		var seconds = pad(new Date(time).getSeconds());
-		var minutes = pad(new Date(time).getMinutes());
-		$("#impressiontime").html(minutes + ":" + seconds + ":" + millisec);
+		$("#impressiontime").html(seconds + ":" + millisec);
 	}, 9);
 }
