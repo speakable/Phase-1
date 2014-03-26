@@ -4,7 +4,7 @@ var robotwords = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
 var toolwords = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
 var robotsounds = new Array();
 var finishedids = new Array();
-var rtime = 0;
+var rtime = 60000;
 var selectedrobotid = 0;
 var selectedtoolid = 0;
 var rtimerid = 0;
@@ -13,7 +13,8 @@ function startrobot() {
 
 	for ( i = 0; i < robotwords.length; i++) {
 		var mySound = new buzz.sound("robot/cartoon/" + robotwords[i], {
-			formats : ["mp3"], preload : true
+			formats : ["mp3"],
+			preload : true
 		});
 		robotsounds.push(mySound);
 	}
@@ -43,7 +44,7 @@ function robotReady() {
 	robotwords = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
 	toolwords = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
 	finishedids = new Array();
-	rtime = 0;
+	rtime = 60000;
 	selectedrobotid = 0;
 	selectedtoolid = 0;
 	rtimerid = 0;
@@ -57,9 +58,14 @@ function robotReady() {
 	clock();
 }
 
-function robotFinished() {
+function robotFinished(completed) {
 	clearInterval(rtimerid);
-	displayFinish("#robotcontainer", rtime / 1000, "startrobot");
+	if (completed) {
+		displayFinish("#robotcontainer", (60000 - rtime) / 1000, "startrobot");
+	} else {
+		displayFinish("#robotcontainer", "FAILED", "startrobot");
+	}
+
 }
 
 function checkPair() {
@@ -107,11 +113,13 @@ function shuffleArray(array) {
 
 function clock() {
 	rtimerid = setInterval(function() {
-		rtime = rtime + 9;
+		rtime = rtime - 9;
+		if (rtime < 0) {
+			robotFinished(false);
+		}
 		var millisec = pad(new Date(rtime).getMilliseconds());
 		var seconds = pad(new Date(rtime).getSeconds());
-		var minutes = pad(new Date(rtime).getMinutes());
-		$("#robottime").html(minutes + ":" + seconds + ":" + millisec);
+		$("#robottime").html(seconds + ":" + millisec);
 	}, 9);
 }
 
