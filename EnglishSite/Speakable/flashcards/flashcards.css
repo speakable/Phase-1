@@ -1,11 +1,15 @@
-﻿
-/* ====================
-        Core Page Elements 
-	==================== */
 
+/* ====================
+    Flashcards Page Elements 
+	==================== */
+#flashcardscontainer {
+	position: absolute;
+	top: 10%;
+	left: 7%;
+}
+	
 #flashcardarea {
-	background-color: white;
-	margin: 0% 7%;
+	margin: 1% 2%;
 	min-height: 325px;
 	padding: 85px 55px;
 	text-align: center;
@@ -20,21 +24,15 @@
 #scoreCard {
 	min-height: 175px;
 	padding: 1% 10%;
-	background: white;
 	margin: 0% 7%;
 }
 
 #score,
 #time  {
 	font-size: 2em;
-	color: ##213141;
 	display: inline-block;
 	padding: 0% 10%;
 }
-
-/* ===================
-           Flash Cards
-	=================== */
 
 .pictureCard {
 	position: relative;
@@ -82,10 +80,6 @@
 	color: #f4f4f4;
 	padding: 5px;
 }
-
-/* ===================
-           Glyphicon Config
-	=================== */
 
 .glyphicon {
 	font-size: 40px;

@@ -1,11 +1,15 @@
-﻿/* ====================
-       Core Page Elements
+
+/* ====================
+    Robot Page Elements
  ==================== */
 
 #robotcontainer {
 	height: 400px;
 	padding: 20px;
-	position: relative;
+	position: absolute;
+	z-index: 1;
+	top: 45%;
+	left: 45%;
 }
 
 #toolsdiv {
