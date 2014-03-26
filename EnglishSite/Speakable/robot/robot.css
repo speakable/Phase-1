@@ -4,12 +4,9 @@
  ==================== */
 
 #robotcontainer {
-	height: 400px;
-	padding: 20px;
 	position: absolute;
-	z-index: 1;
-	top: 45%;
-	left: 45%;
+	top: 6%;
+	left: 7%;
 }
 
 #toolsdiv {

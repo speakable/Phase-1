@@ -2,9 +2,10 @@
 /* ====================
     Flashcards Page Elements 
 	==================== */
+	
 #flashcardscontainer {
 	position: absolute;
-	top: 10%;
+	top: 6%;
 	left: 7%;
 }
 	
