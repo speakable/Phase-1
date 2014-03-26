@@ -48,6 +48,11 @@
 					responsiveFallback : 600
 				});
 			});
+
+			//Might move this to a better place..?
+			function movedown() {
+				$(".main").moveDown();
+			}
 		</script>
 	</head>
 	<body>
@@ -67,8 +72,8 @@
 							<img id="welcome_pic" src="assets/img/welcome/elliott.png">
 							<img id="welcome_speech_bubble" src="assets/img/welcome/greeting.png">
 							<img id="welcome_logo" src="assets/img/welcome/welcome_logo.png">
-							<img class="next_button" src="assets/img/next_button.png" >				
-							
+							<img class="next_button" src="assets/img/next_button.png" onclick="movedown()">
+
 						</div>
 
 					</div>
@@ -86,7 +91,7 @@
 							<img id="zachs_speech_bubble2" src="assets/img/zach/hometown.png">
 							<img id="zachs_speech_bubble3" src="assets/img/zach/hobby.png">
 							<img id="zachs_instructions" src="assets/img/zach/impressions_instructions.png">
-							<img class="next_button" src="assets/img/next_button.png" >
+							<img class="next_button" src="assets/img/next_button.png" onclick="movedown()">
 
 						</div>
 
@@ -95,20 +100,20 @@
 
 				<section class="page3">
 					<div class="page_container">
-					
-							<div class="profile_cointainer">
-								<img class="profile_background" src="impressions/img/background.png">
-								<img class="next_button" src="assets/img/next_button.png" >
-			
-								<div id="impressionscontainer">
-									<div id="impressionsstart" class="startprompt">							
-										<button onclick="startimpressions()">
-											Go!
-										</button>
-									</div>
+
+						<div class="profile_cointainer">
+							<img class="profile_background" src="impressions/img/background.png">
+							<img class="next_button" src="assets/img/next_button.png" onclick="movedown()">
+
+							<div id="impressionscontainer">
+								<div id="impressionsstart" class="startprompt">
+									<button onclick="startimpressions()">
+										Go!
+									</button>
 								</div>
-							</div>	
-					
+							</div>
+						</div>
+
 					</div>
 				</section>
 
@@ -124,7 +129,7 @@
 							<img id="elliotts_speech_bubble2" src="assets/img/elliott/hometown.png">
 							<img id="elliotts_speech_bubble3" src="assets/img/elliott/hobby.png">
 							<img id="elliotts_instructions" src="assets/img/elliott/robot_instructions.png">
-							<img class="next_button" src="assets/img/next_button.png" >
+							<img class="next_button" src="assets/img/next_button.png" onclick="movedown()">
 
 						</div>
 
@@ -133,17 +138,17 @@
 
 				<section class="page5">
 					<div class="page_container">
-					<div class="profile_cointainer">
-								<img class="profile_background" src="robot/images/background.png">
-								<img class="next_button" src="assets/img/next_button.png" >			
-					
-						<div id="robotcontainer">
-							<div id="robotstart" class="startprompt">
-								<button onclick="startrobot()">
-									Go!
-								</button>
+						<div class="profile_cointainer">
+							<img class="profile_background" src="robot/images/background.png">
+							<img class="next_button" src="assets/img/next_button.png" onclick="movedown()">
+
+							<div id="robotcontainer">
+								<div id="robotstart" class="startprompt">
+									<button onclick="startrobot()">
+										Go!
+									</button>
+								</div>
 							</div>
-						</div>
 						</div>
 					</div>
 				</section>
@@ -160,7 +165,7 @@
 							<img id="stevens_speech_bubble2" src="assets/img/steven/hometown.png">
 							<img id="stevens_speech_bubble3" src="assets/img/steven/hobby.png">
 							<img id="stevens_instructions" src="assets/img/steven/flashcards_instructions.png">
-							<img class="next_button" src="assets/img/next_button.png" >
+							<img class="next_button" src="assets/img/next_button.png" onclick="movedown()">
 
 						</div>
 
@@ -169,11 +174,11 @@
 
 				<section class="page7">
 					<div class="page_container">
-					
+
 						<div class="profile_cointainer">
 							<img class="profile_background" src="flashcards/img/background.jpg">
-							<img class="next_button" src="assets/img/next_button.png" >			
-					
+							<img class="next_button" src="assets/img/next_button.png" onclick="movedown()">
+
 							<div id="flashcardscontainer">
 								<div id="flashcardsstart" class="startprompt">
 									<button onclick="startflashcards()">
