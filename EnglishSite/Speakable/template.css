@@ -27,14 +27,15 @@
 
 .play_button {
 	cursor: pointer;
-	margin-right: 83px;
-	margin-top: 32px;
+	margin-top: 45px;
+	margin-right: 50px;
 }
 
 .startprompt {
-	padding: 8% 9%;
-	height: 400px;
-	width: 1035px;
+	margin-top: 50px;
+	height: 500px;
+	width: 1220px;
+	background: blue;
 }
 
 .next_button {
