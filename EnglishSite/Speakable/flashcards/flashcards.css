@@ -12,7 +12,8 @@
 
 #flashcardarea {
 	margin: 3% 2%;
-	min-height: 325px;
+	width: 1090px;
+	height: 350px;
 	padding: 85px 55px;
 	text-align: center;
 	-webkit-touch-callout: none;
@@ -26,7 +27,7 @@
 #scoreCard {
 	position: absolute;
 	top: 7%;
-	right: 47%;
+	right: 44%;
 	width: 150px;
 }
 
