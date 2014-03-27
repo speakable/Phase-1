@@ -27,7 +27,8 @@
 
 .play_button {
 	cursor: pointer;
-	margin-right: 40px;
+	margin-right: 83px;
+	margin-top: 32px;
 }
 
 .startprompt {
@@ -41,13 +42,11 @@
 	cursor: pointer;
 	position: absolute;
 	bottom: 8%;
-	right: 47%;
-	opacity: .8;
+	right: 48%;
 	z-index: 10
 }
 
 .next_button:hover {
-	opacity: 1;
 }
 
 .main section.page1 {
