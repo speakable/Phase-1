@@ -7,28 +7,24 @@
 	position: absolute;
 	top: 6%;
 	left: 7%;
+	height: 550px;
+	width: 1200px;
 }
 
 #toolsdiv {
-	width: 120px;
 	position: absolute;
-	top: 35%;
-	left: 32%;
+	top: 20%;
+	left: 24%;
 }
 
 #robotdiv {
-	width: 195px;
+	width: 200px;
 	position: absolute;
-	top: 50%;
-	left: 43.5%;
+	top: 25%;
+	right: 23%;
 }
 
-#clockdiv {
-	height: 120px;
-	width: 120px;
-	position: absolute;
-	top: 35%;
-	right: 29%;
+#robottime {
 }
 
 #tools td {

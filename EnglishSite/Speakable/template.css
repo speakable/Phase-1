@@ -1,5 +1,5 @@
 /*  ======================
-         Core Page Elements
+    Core Page Elements
  ====================== */
 
 #nav_logo {
@@ -31,23 +31,116 @@
 	margin-right: 50px;
 }
 
-.startprompt {
-	margin-top: 50px;
-	height: 500px;
-	width: 1220px;
-}
-
 .next_button {
 	width: 65px;
 	cursor: pointer;
 	position: absolute;
 	bottom: 8%;
 	right: 48%;
-	z-index: 10
+	z-index: 10;
 }
 
 .next_button:hover {
 }
+
+/*  ======================
+ Login Function / Profile Button
+ ====================== */
+
+#loginForm {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	height: 50px;
+	z-index: 10;
+}
+
+#inputBoxes,
+#userImage {
+	display: inline-block;
+}
+
+#inputBoxes {
+	float: left;
+	margin-top: 13px;
+	margin-right: 2px;
+}
+
+#userImage img {
+	height: 50px;
+	width: 50px;	
+	cursor: pointer;
+}
+
+/*  ===================
+   Start/Finish Elements
+ ====================== */
+
+.startprompt, 
+.finishprompt  {
+	margin-top: 50px;
+	height: 500px;
+	width: 1220px;
+}
+
+.resultWindow {
+	position: relative;
+}
+
+#resultGraphic {
+	padding-top: 50px;
+	height: 400px;
+}
+
+#scoreReportdiv {
+	position: absolute;
+	top: 165px;
+	left: 605px;
+}
+
+#restartGamediv {
+	height: 100px;
+	width: 100px;
+	border-radius: 150px;
+	position: absolute;
+	top: 132px;
+	left: 734px;
+	cursor: pointer;
+	background: white;
+	opacity: .3;
+}
+
+#restartGamediv:hover {
+	opacity: 0;
+}
+
+#twitterLinkdiv,
+#facebookLinkdiv {
+	height: 58px;
+	width: 58px;
+	border-radius: 150px;
+	background: white;
+	position: absolute;
+	top: 278px;
+	cursor: pointer;
+	opacity: .3;
+}
+
+#twitterLinkdiv {
+	left: 518px;
+}
+#facebookLinkdiv {
+	left: 598px;
+}
+
+#twitterLinkdiv:hover,
+#facebookLinkdiv:hover {
+		opacity: 0;
+}
+
+/*  ===================
+ section.page formatting
+ ====================== */
 
 .main section.page1 {
 }
@@ -236,11 +329,9 @@ li {
 
 a {
 	text-decoration: none;
-	color: seashell;
+	color: white;
 }
 
 a:hover {
 	color: goldenrod;
 }
-
- ====================== */

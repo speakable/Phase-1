@@ -10,8 +10,8 @@ function startimpressions() {
 	for ( i = 1; i <= choices.length; i++) {
 		imagesrcs.push("impressions/img/" + i + ".png");
 	}
-	imagesrcs.push("impressions/img/right_face.png");
-	imagesrcs.push("impressions/img/wrong_face.png");
+	imagesrcs.push("impressions/img/facehappy.png");
+	imagesrcs.push("impressions/img/faceshocked.png");
 	loadImages(imagesrcs, impressionsReady);
 }
 
@@ -27,7 +27,7 @@ function impressionsReady() {
 	$("#impressionscontainer").append("<div id='clock_div'><p id='impressiontime'>00:00:0000</div>");
 
 	impressionsclock();
-	$("#facediv").append("<img src='impressions/img/wrong_face.png' id = 'facei'>");
+	$("#facediv").append("<img src='impressions/img/faceshocked.png' id = 'facei'>");
 	$("#gamearea").append("<img id='icon' src='impressions/img/1.png'>");
 	$("#gamearea").append("<br><br><br><br><br><br>");
 	$("#gamearea").append("<button type='button' onClick = 'buttonClicked(1)' id = 'c1Btn'>Bowling</button>");
@@ -48,9 +48,9 @@ function checkAnswer(btnid) {
 	var selectedanswer = $("#c" + btnid + "Btn").html();
 	if (selectedanswer == choices[lastid - 1]) {
 		correctanswers++;
-		$("#facei").attr("src", "impressions/img/right_face.png");
+		$("#facei").attr("src", "impressions/img/facehappy.png");
 	} else {
-		$("#facei").attr("src", "impressions/img/wrong_face.png");
+		$("#facei").attr("src", "impressions/img/faceshocked.png");
 		// if (correctanswers != 0) {
 		// correctanswers--;
 		// }
