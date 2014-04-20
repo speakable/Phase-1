@@ -5,22 +5,22 @@
 
 #robotcontainer {
 	position: absolute;
-	top: 6%;
+	top: 12%;
 	left: 7%;
-	height: 550px;
-	width: 1200px;
+	height: 530px;
+	width: 1230px;
 }
 
 #toolsdiv {
 	position: absolute;
-	top: 20%;
+	top: 14%;
 	left: 24%;
 }
 
 #robotdiv {
 	width: 200px;
 	position: absolute;
-	top: 25%;
+	top: 18%;
 	right: 23%;
 }
 

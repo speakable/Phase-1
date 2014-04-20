@@ -4,8 +4,8 @@ function displayFinish(container, score, onretry) {
 	$('.finishprompt').append("<div class='resultWindow'><img id='resultGraphic' src='assets/img/share_panel.png'></div>");
 	$('.resultWindow').append("<div id='scoreReportdiv'<p>" + score + " points</p></div>");	
 	$('.resultWindow').append("<div id='restartGamediv'onClick=" + onretry + "()></div>");
-	$('.resultWindow').append("<a href='http://www.twitter.com'><div id='twitterLinkdiv'></div></a>");
-	$('.resultWindow').append("<a href='http://www.facebook.com'><div id='facebookLinkdiv'></div></a>");		
+	$('.resultWindow').append("<a href='https://twitter.com/home?status=www.speakable.jp'><div id='twitterLinkdiv'></div></a>");
+	$('.resultWindow').append("<a href='https://www.facebook.com/sharer/sharer.php?u=www.speakable.jp'><div id='facebookLinkdiv'></div></a>");		
 }
 
 // function displayFinish(container, score, onretry) {

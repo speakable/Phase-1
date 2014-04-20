@@ -5,10 +5,10 @@
 
 #impressionscontainer {
 	position: absolute;
-	top: 6%;
+	top: 12%;
 	left: 7%;
-	height: 700px;
-	width: 1230px;
+	min-height: 530px;
+	min-width: 1230px;
 }
 
 #face {

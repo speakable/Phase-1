@@ -5,13 +5,14 @@
 	
 #flashcardscontainer {
 	position: absolute;
-	top: 6%;
+	top: 12%;
 	left: 7%;
-	height: 600px;
+	height: 530px;
+	width: 1230px;
 }
 
 #flashcardarea {
-	margin: 3% 2%;
+	margin: .2% 2%;
 	width: 1090px;
 	height: 350px;
 	padding: 85px 55px;
@@ -26,7 +27,7 @@
 
 #scoreCard {
 	position: absolute;
-	top: 7%;
+	top: 2%;
 	right: 44%;
 	width: 150px;
 }
@@ -36,6 +37,7 @@
 	font-size: 2em;
 	display: inline-block;
 	padding: 0% 10%;
+	color: white;
 }
 
 .pictureCard {

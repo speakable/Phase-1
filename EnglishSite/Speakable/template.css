@@ -1,13 +1,17 @@
 /*  ======================
     Core Page Elements
  ====================== */
+body {
+	min-width: 1220px;
+	min-height: 600px;
+}
 
 #nav_logo {
 	position: absolute;
 	top: 3%;
 	left: 2%;
 	cursor: pointer;
-	width: 12%;
+	width: 150px;
 	z-index: 1;
 } 
 .wrapper {
@@ -27,8 +31,8 @@
 
 .play_button {
 	cursor: pointer;
-	margin-top: 45px;
-	margin-right: 50px;
+	margin-top: 30px;
+	
 }
 
 .next_button {
@@ -36,7 +40,7 @@
 	cursor: pointer;
 	position: absolute;
 	bottom: 8%;
-	right: 48%;
+	right: 46.6%;
 	z-index: 10;
 }
 
@@ -49,7 +53,7 @@
 
 #loginForm {
 	position: absolute;
-	top: 5px;
+	top: 3%;
 	right: 5px;
 	height: 50px;
 	z-index: 10;
