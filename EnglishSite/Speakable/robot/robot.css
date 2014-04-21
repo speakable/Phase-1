@@ -13,34 +13,32 @@
 
 #toolsdiv {
 	position: absolute;
-	top: 14%;
-	left: 24%;
+	top: 15.7%;
+	left: 22.7%;
 }
 
 #robotdiv {
 	width: 200px;
 	position: absolute;
-	top: 18%;
-	right: 23%;
+	top: 27%;
+	right: 22%;
 }
 
-#robottime {
-}
-
-#tools td {
-	padding: 0;
-	margin: 0;
-	font-size: 29px;
-	cursor: pointer;
-}
-
+#tools td, 
 #robot td {
-	padding: 0;
-	margin: 0;
-	font-size: 29px;
 	cursor: pointer;
+}
+
+#clock_div {
+	position: absolute;
+	top: 3%;
+	right: 1.5%;
 }
 
 #dialog {
 	display: none;
+}
+
+#robot img {
+	display:block;
 }
