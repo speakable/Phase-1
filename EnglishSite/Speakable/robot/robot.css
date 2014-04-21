@@ -5,10 +5,10 @@
 
 #robotcontainer {
 	position: absolute;
-	top: 12%;
+	top: 11%;
 	left: 7%;
-	height: 530px;
-	width: 1230px;
+	height: 80%;
+	width: 90%;
 }
 
 #toolsdiv {
@@ -20,8 +20,6 @@
 #robotdiv {
 	width: 200px;
 	position: absolute;
-	top: 27%;
-	right: 22%;
 }
 
 #tools td, 

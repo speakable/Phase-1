@@ -32,7 +32,6 @@ body {
 .play_button {
 	cursor: pointer;
 	margin-top: 30px;
-	
 }
 
 .next_button {
@@ -310,6 +309,50 @@ body {
 	top: 17.5%;
 	left: 14%;
 	width: 27%;
+}
+
+/* ===================
+ * Media Queries
+ =================== */
+
+/* 1366px Screen Resolution ----------- */
+@media only screen 
+and (min-width: 1366px)
+and (max-width: 1439px) {
+	
+.play_button {
+}
+
+#robotdiv {
+	top: 27%;
+	right: 22%;
+}
+}
+
+/* 1360px Screen Resolution ----------- */
+@media only screen 
+and (min-width: 1360px)
+and (max-width: 1365px) {
+
+.play_button {
+	margin-right: 8px;
+}
+}
+
+/* 1280px Screen Resolution ----------- */
+@media only screen 
+and (min-width: 1280px)
+and (max-width: 1350px) {
+
+.play_button {
+	margin-top: 10px;
+	margin-right: 70px;
+}
+
+#robotdiv {
+	top: 24.5%;
+	right: 19.5%;
+}
 }
 
 /*  ======================

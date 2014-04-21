@@ -5,10 +5,10 @@
 	
 #flashcardscontainer {
 	position: absolute;
-	top: 12%;
+	top: 11%;
 	left: 7%;
-	height: 530px;
-	width: 1230px;
+	height: 80%;
+	width: 90%;
 }
 
 #flashcardarea {
