@@ -321,6 +321,7 @@ and (min-width: 1366px)
 and (max-width: 1439px) {
 	
 .play_button {
+	margin-right: 5px;
 }
 
 #robotdiv {

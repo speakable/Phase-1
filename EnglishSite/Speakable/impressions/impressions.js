@@ -66,7 +66,7 @@ function gamefinished(completed) {
 	if (completed) {
 		displayFinish("#impressionscontainer", (60000-time)/1000, "impressionsReady");
 	} else {
-		displayFinish("#impressionscontainer", "FAILED", "impressionsReady");
+		displayFinish("#impressionscontainer", "Try again!", "impressionsReady");
 	}
 
 }

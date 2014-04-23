@@ -1,5 +1,6 @@
 var fruit = ["apple", "cherries", "grapes", "lemon", "orange", "pear"];
-var clubs = ["art", "baseball", "basketball", "band", "ping_pong", "volleyball"];
+var clubs = ["tennis", "baseball", "basketball", "football", "ping_pong", "volleyball"];
+var school = ["calculator", "pencil", "notebook", "scissors", "clock", "paper_clip"];
 var things = ["envelope", "eraser", "money", "fridge", "USB_drive", "watch"];
 
 var vocab = [];
@@ -9,8 +10,8 @@ var score = 0;
 var flashtime = 60;
 var wordsremaining;
 var stop = false;
-var currentDeck = "things";
-var folder = "500px72dpi/";
+var currentDeck = "school";
+var folder = "categories/";
 
 var correctsound;
 var wrongsound;
@@ -32,13 +33,13 @@ function startflashcards() {
 
 	var imagesrcs = [];
 	for ( i = 0; i < fruit.length; i++) {
-		imagesrcs.push("flashcards/img/500px72dpi/fruit/" + fruit[i] + ".png");
+		imagesrcs.push("flashcards/img/categories/fruit/" + fruit[i] + ".png");
 	}
 	for ( i = 0; i < clubs.length; i++) {
-		imagesrcs.push("flashcards/img/500px72dpi/clubs/" + clubs[i] + ".png");
+		imagesrcs.push("flashcards/img/categories/clubs/" + clubs[i] + ".png");
 	}
-	for ( i = 0; i < things.length; i++) {
-		imagesrcs.push("flashcards/img/500px72dpi/things/" + things[i] + ".png");
+	for ( i = 0; i < school.length; i++) {
+		imagesrcs.push("flashcards/img/categories/school/" + school[i] + ".png");
 	}
 
 	loadImages(imagesrcs, flashcardsReady);
@@ -52,7 +53,7 @@ function flashcardsReady() {
 	flashtime = 60;
 	wordsremaining;
 	stop = false;
-	currentDeck = "things";
+	currentDeck = "school";
 
 	$("#flashcardscontainer").empty();
 	$("#flashcardscontainer").append("<div id='flashcardarea'></div>");
@@ -63,15 +64,15 @@ function flashcardsReady() {
 }
 
 function createFlashcards() {
-	if (currentDeck == "things") {
+	if (currentDeck == "school") {
 		currentDeck = "fruit";
 		vocab = fruit;
 	} else if (currentDeck == "fruit") {
 		currentDeck = "clubs";
 		vocab = clubs;
 	} else {
-		currentDeck = "things";
-		vocab = things;
+		currentDeck = "school";
+		vocab = school;
 	}
 
 	wordsremaining = vocab.length;
@@ -152,7 +153,7 @@ function flashclock() {
 		$("#time").text(--flashtime);
 		if (flashtime == 0) {
 			clearInterval(timerid);
-			displayFinish("#flashcardscontainer", score, "startflashcards");
+			displayFinishScore("#flashcardscontainer", score, "startflashcards");
 		}
 	}, 1000);
 }
