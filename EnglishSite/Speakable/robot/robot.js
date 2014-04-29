@@ -12,7 +12,7 @@ var rtimerid = 0;
 function startrobot() {
 
 	for ( i = 0; i < robotwords.length; i++) {
-		var mySound = new buzz.sound("robot/cartoon/" + robotwords[i], {
+		var mySound = new buzz.sound("robot/sounds/" + robotwords[i], {
 			formats : ["mp3"],
 			preload : true
 		});
@@ -52,7 +52,6 @@ function robotReady() {
 	$("#robotcontainer").empty();
 	$("#robotcontainer").load("robot/robot.html");
 
-	robotwords = shuffleArray(robotwords);
 	toolwords = shuffleArray(toolwords);
 
 	clock();
