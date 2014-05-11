@@ -25,7 +25,7 @@
     keyboard: true,
     beforeMove: null,
     afterMove: null,
-    loop: false,
+    loop: true,
     responsiveFallback: false
 	};
 	

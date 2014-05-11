@@ -311,6 +311,56 @@ body {
 	width: 27%;
 }
 
+
+/* ====================
+	Contact Page Elements
+==================== */
+
+#contact_background {
+	width: 89%;
+	max-height: 86%;
+}
+
+#facebookShare,
+#twitterShare,
+#mailShare {
+	position: absolute;
+	border-radius: 150px;
+	z-index: 10;
+	opacity: .3;
+	background: white;
+	cursor: pointer;
+}
+
+#facebookShare:hover,
+#twitterShare:hover,
+#mailShare:hover {
+	opacity: 0;
+}
+
+#facebookShare {
+	height: 85px;
+	width: 88px;
+	bottom: 22%;
+	left: 46.4%;
+}
+
+#twitterShare {
+	height: 68px;
+	width: 73px;
+	bottom: 27%;
+	left: 40.2%;
+}
+
+#mailShare {
+	height: 45px;
+	width: 49px;
+	bottom: 33.5%;
+	left: 36.6%;
+}
+
+
+
 /* ===================
  * Media Queries
  =================== */
