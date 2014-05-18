@@ -1,7 +1,7 @@
 var choices = ["Bowling", "Butterfly", "XBox", "Donut", "Fire", "Snowman", "Guitar", "iPad", "Pizza", "Plant", "Polar Bear", "Soccer Ball"];
 
 var lastid = 1;
-var time = 1000;
+var time = 60000;
 var correctanswers = 0;
 var itimerid = 0;
 
@@ -16,7 +16,7 @@ function startimpressions() {
 }
 
 function impressionsReady() {
-	time = 1000;
+	time = 60000;
 	lastid = 1;
 	correctanswers = 0;
 	itimerid = 0;
