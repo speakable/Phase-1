@@ -153,7 +153,7 @@ function flashclock() {
 		$("#time").text(--flashtime);
 		if (flashtime == 0) {
 			clearInterval(timerid);
-			displayFinishScore("#flashcardscontainer", score, "startflashcards");
+			displayFinishFlashcards("#flashcardscontainer", score, "startflashcards");
 		}
 	}, 1000);
 }

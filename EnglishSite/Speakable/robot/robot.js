@@ -60,9 +60,9 @@ function robotReady() {
 function robotFinished(completed) {
 	clearInterval(rtimerid);
 	if (completed) {
-		displayFinish("#robotcontainer", (60000 - rtime) / 1000, "startrobot");
+		displayFinishRobot("#robotcontainer", (60000 - rtime) / 1000, "startrobot");
 	} else {
-		displayFinish("#robotcontainer", "FAILED", "startrobot");
+		displayFinishRobot("#robotcontainer", "FAILED", "startrobot");
 	}
 
 }
