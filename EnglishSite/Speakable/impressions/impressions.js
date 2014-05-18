@@ -1,7 +1,7 @@
 var choices = ["Bowling", "Butterfly", "XBox", "Donut", "Fire", "Snowman", "Guitar", "iPad", "Pizza", "Plant", "Polar Bear", "Soccer Ball"];
 
 var lastid = 1;
-var time = 60000;
+var time = 1000;
 var correctanswers = 0;
 var itimerid = 0;
 
@@ -16,7 +16,7 @@ function startimpressions() {
 }
 
 function impressionsReady() {
-	time = 60000;
+	time = 1000;
 	lastid = 1;
 	correctanswers = 0;
 	itimerid = 0;
@@ -64,9 +64,9 @@ function checkAnswer(btnid) {
 function gamefinished(completed) {
 	clearInterval(itimerid);
 	if (completed) {
-		displayFinish("#impressionscontainer", (60000-time)/1000, "impressionsReady");
+		displayFinishImpressions("#impressionscontainer", (60000-time)/1000, "impressionsReady");
 	} else {
-		displayFinish("#impressionscontainer", "Try again!", "impressionsReady");
+		displayFinishImpressions("#impressionscontainer", "Try again!", "impressionsReady");
 	}
 
 }

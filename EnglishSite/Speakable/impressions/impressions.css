@@ -13,12 +13,12 @@
 
 #face {
 	position: absolute;
-	top: 24%;
-	left: 33%;	
+	top: 20%;
+	left: 6.9%;	
 }
 
-.face_pic img {
-	width: 100%;
+#face img {
+	width: 80%;
 }
 
 #gamearea {
