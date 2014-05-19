@@ -1,4 +1,5 @@
-var choices = ["Bowling", "Butterfly", "XBox", "Donut", "Fire", "Snowman", "Guitar", "iPad", "Pizza", "Plant", "Polar Bear", "Soccer Ball"];
+var choices = ["apple", "cherries", "grapes", "lemon", "orange", "pear", "baseball", "basketball", "football", "ping pong", "tennis", "volleyball", "pencil", "notebook", "scissors", "clock", "calculator", "sharpener"];
+//var choices = ["Bowling", "Butterfly", "XBox", "Donut", "Fire", "Snowman", "Guitar", "iPad", "Pizza", "Plant", "Polar Bear", "Soccer Ball"];
 
 var lastid = 1;
 var time = 60000;
@@ -20,7 +21,9 @@ function impressionsReady() {
 	lastid = 1;
 	correctanswers = 0;
 	itimerid = 0;
-
+	
+	$('#backgroundSwitcher').empty();
+	$('#backgroundSwitcher').append("<img class='profile_background' src='impressions/img/background.png'>");	
 	$("#impressionscontainer").empty();
 	$("#impressionscontainer").append("<div id='face'><div class='face_pic' id='facediv'></div></div>");
 	$("#impressionscontainer").append("<div id='gamearea'></div>");
@@ -28,11 +31,11 @@ function impressionsReady() {
 
 	impressionsclock();
 	$("#facediv").append("<img src='impressions/img/faceshocked.png' id = 'facei'>");
-	$("#gamearea").append("<img id='icon' src='impressions/img/1.png'>");
+	$("#gamearea").append("<img id='icon' src='impressions/img/vocabulary/1.png'>");
 	$("#gamearea").append("<br><br><br><br><br><br>");
-	$("#gamearea").append("<button type='button' onClick = 'buttonClicked(1)' id = 'c1Btn'>Bowling</button>");
-	$("#gamearea").append("<button type='button' onClick = 'buttonClicked(2)' id = 'c2Btn'>Butterfly</button>");
-	$("#gamearea").append("<button type='button' onClick = 'buttonClicked(3)' id = 'c3Btn'>XBox</button>");
+	$("#gamearea").append("<button type='button' onClick = 'buttonClicked(1)' id = 'c1Btn'>apple</button>");
+	$("#gamearea").append("<button type='button' onClick = 'buttonClicked(2)' id = 'c2Btn'>cherries</button>");
+	$("#gamearea").append("<button type='button' onClick = 'buttonClicked(3)' id = 'c3Btn'>grapes</button>");
 
 	grabImage();
 	setButtonAnswers();
@@ -56,7 +59,7 @@ function checkAnswer(btnid) {
 		// }
 	}
 
-	if (correctanswers == 9) {
+	if (correctanswers == 20) {
 		gamefinished(true);
 	}
 }
@@ -73,7 +76,7 @@ function gamefinished(completed) {
 
 function grabImage() {
 	lastid = getNum([lastid], choices.length);
-	$("#icon").attr("src", "impressions/img/" + lastid + ".png");
+	$("#icon").attr("src", "impressions/img/vocabulary/" + lastid + ".png");
 }
 
 function setButtonAnswers() {

@@ -25,13 +25,15 @@ body {
 }
 
 .profile_background {
-	width: 96%;
-	max-height: 84%;
+	width: 95%;
+	height: 550px;
 }
 
 .play_button {
 	cursor: pointer;
-	margin-top: 30px;
+	position: absolute;
+	bottom: 30%;
+	right: 39%;
 }
 
 .next_button {
@@ -43,40 +45,8 @@ body {
 	z-index: 10;
 }
 
-.next_button:hover {
-}
-
-/*  ======================
- Login Function / Profile Button
- ====================== */
-
-#loginForm {
-	position: absolute;
-	top: 3%;
-	right: 5px;
-	height: 50px;
-	z-index: 10;
-}
-
-#inputBoxes,
-#userImage {
-	display: inline-block;
-}
-
-#inputBoxes {
-	float: left;
-	margin-top: 13px;
-	margin-right: 2px;
-}
-
-#userImage img {
-	height: 50px;
-	width: 50px;	
-	cursor: pointer;
-}
-
 /*  ===================
-   Start/Finish Elementsz
+   Start/Finish Elements
  ====================== */
 
 .startprompt, 
@@ -311,7 +281,6 @@ body {
 	width: 27%;
 }
 
-
 /* ====================
 	Contact Page Elements
 ==================== */
@@ -357,79 +326,4 @@ body {
 	width: 49px;
 	bottom: 33.5%;
 	left: 36.6%;
-}
-
-
-
-/* ===================
- * Media Queries
- =================== */
-
-/* 1366px Screen Resolution ----------- */
-@media only screen 
-and (min-width: 1366px)
-and (max-width: 1439px) {
-	
-.play_button {
-	margin-right: 5px;
-}
-
-#robotdiv {
-	top: 27%;
-	right: 22%;
-}
-}
-
-/* 1360px Screen Resolution ----------- */
-@media only screen 
-and (min-width: 1360px)
-and (max-width: 1365px) {
-
-.play_button {
-	margin-right: 8px;
-}
-}
-
-/* 1280px Screen Resolution ----------- */
-@media only screen 
-and (min-width: 1280px)
-and (max-width: 1350px) {
-
-.play_button {
-	margin-top: 10px;
-	margin-right: 70px;
-}
-
-#robotdiv {
-	top: 24.5%;
-	right: 19.5%;
-}
-}
-
-/*  ======================
-  Navigation and Links: Not in use now
- ====================== 
-
-nav {
-	width: 250px;
-	margin-left: 100px;
-	padding-right: 10%;
-}
-
-ul {
-	list-style: none;
-}
-
-li {
-	display: inline;
-	padding-right: 5%;
-}
-
-a {
-	text-decoration: none;
-	color: white;
-}
-
-a:hover {
-	color: goldenrod;
 }

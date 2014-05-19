@@ -19,15 +19,15 @@ var selectsound;
 
 function startflashcards() {
 	correctsound = new buzz.sound("flashcards/sounds/coin", {
-		formats : ["mp3"],
+		formats : ["mp3", "ogg", "wav"],
 		preload : true
 	});
 	wrongsound = new buzz.sound("flashcards/sounds/noMatchSound", {
-		formats : ["mp3"],
+		formats : ["mp3", "ogg", "wav"],
 		preload : true
 	});
 	selectsound = new buzz.sound("flashcards/sounds/clickSound", {
-		formats : ["mp3"],
+		formats : ["mp3", "ogg", "wav"],
 		preload : true
 	});
 
@@ -79,7 +79,7 @@ function createFlashcards() {
 	vocab = shuffleArray(vocab);
 	for (var i = 0; i < vocab.length; i++) {
 		var word = vocab[i];
-		$("#flashcardarea").append("<div id='" + word + "' class='pictureCard pullUp'><img class ='picture' src='flashcards/img/" + folder + currentDeck + "/" + word + ".png'></div>");
+		$("#flashcardarea").append("<div id='" + word + "' class='pictureCard'><img class ='picture' src='flashcards/img/" + folder + currentDeck + "/" + word + ".png'></div>");
 	}
 	vocab = shuffleArray(vocab);
 	for (var i = 0; i < vocab.length; i++) {
